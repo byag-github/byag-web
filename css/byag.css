@@ -180,3 +180,70 @@ footer {
         transform: translateY(-10px);
     }
 }
+
+/* responsif */
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    main p {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.25rem;
+        font-size: 0.875rem;
+    }
+
+    .p-1 {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.875rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+
+    .p-1 {
+        margin: 0 0.5rem;
+    }
+}
