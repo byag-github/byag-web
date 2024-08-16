@@ -1,0 +1,182 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fredericka+the+Great&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+
+    margin: 0;
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: hidden;
+    animation: backgroundFade 5s ease-in-out infinite;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to right, #00aaff, #ff00d0);
+    color: #fff;
+    animation: slideDown 1s ease-out;
+    -webkit-animation: slideDown 1s ease-out;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    animation: zoomIn 1.5s ease-out;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease-out;
+}
+
+main {
+    padding: 3rem;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+main p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.button-container {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(to right, #00aaff, #ff00d0);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.1s, transform 0.1s;
+    animation: bounceIn 2s ease-in-out infinite;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ff00d0, #00aaff);
+    transform: scale(1.1);
+}
+
+.p-1 {
+    margin: 0 2rem;
+    animation: bounceIn 2s ease-in-out infinite;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes backgroundFade {
+    0% {
+        background-color: #0d0d0d;
+    }
+
+    50% {
+        background-color: #1a1a1a;
+    }
+
+    100% {
+        background-color: #0d0d0d;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
