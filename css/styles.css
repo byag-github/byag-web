@@ -5,11 +5,10 @@
 .audio-controls {
     display: flex;
     justify-content: center;
-    /*Pusatkantombolsecarahorizontal*/
+    
     align-items: center;
-    /*Pusatkantombolsecaravertikal*/
+    
     margin: 10px auto;
-    /*Spasidisekitarkontainer*/
     padding: 10px;
     max-width: 200px;
     background-color: #f0f0f0;
@@ -26,10 +25,6 @@
     border: #00aaff;
     cursor: pointer;
     border-radius: 5px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
 }
 
 .audio-controls button:hover {
