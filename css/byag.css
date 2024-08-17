@@ -28,9 +28,12 @@ header {
 }
 
 header h1 {
-    font-size: 3rem;
     margin: 0;
-    animation: zoomIn 1.5s ease-out;
+    padding: 0;
+    font-size: 3rem;
+    text-align: left;
+    animation: zoomIn 5s;
+    -webkit-animation: zoomIn 5s;
 }
 
 header p {
@@ -58,6 +61,7 @@ main p {
 }
 
 .byag a {
+    
     font-weight: bold;
     animation: bounceIn 1s;
     color: #fff;
@@ -99,6 +103,17 @@ footer {
     bottom: 0;
     width: 100%;
     animation: slideUp 1s ease-out;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5); /* Mulai dengan ukuran 50% */
+        opacity: 0; /* Transparan */
+    }
+    100% {
+        transform: scale(1); /* Berakhir dengan ukuran 100% (asli) */
+        opacity: 1; /* Opaque */
+    }
 }
 
 @keyframes backgroundFade {

@@ -31,17 +31,11 @@
 }
 
 .img2 img {
-    width: 700px;
-    height: 270px;
+    width: 450px;
+    height: 170px;
     border: 1px solid #000000;
     animation: fadeInUp 2s ease-out;
     -webkit-animation: fadeInUp 2s ease-out;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -62,8 +56,8 @@ header {
     color: #ff00d0;
     padding: 1rem;
     align-items: center;
-    animation: slideDown 0.5s ease-out;
-    -webkit-animation: slideDown 0.5s ease-out;
+    animation: slideDown 1s ease-out;
+    -webkit-animation: slideDown 1s ease-out;
 }
 
 .byag a {
@@ -149,13 +143,13 @@ main {
 }
 
 section {
-    background: #fff;
+background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
     box-sizing: border-box;
+    padding: 1rem;
     margin: auto;
     animation: fadeInUp 2s ease-out;
     -webkit-animation: fadeInUp 2s ease-out;
@@ -167,9 +161,9 @@ section {
 
 section h2 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0rem;
     margin-bottom: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     animation: fadeIn 0.5s ease-out;
     -webkit-animation: fadeIn 0.5s ease-out;
 }
@@ -233,8 +227,8 @@ footer {
     padding: 0.5rem;
     position: relative;
     width: 100%;
-    animation: slideUp 0.5s ease-out;
-    -webkit-animation: slideUp 0.5s ease-out;
+    animation: slideUp 1s ease-out;
+    -webkit-animation: slideUp 1s ease-out;
 }
 
 /* biar responsif */
@@ -242,47 +236,47 @@ footer {
 
 @media (max-width:4096px) {
     header {
-        flex-direction: row; /* Ubah arah flex menjadi kolom untuk perangkat sedang */
+        flex-direction: row; 
         padding: 1.5rem;
-        padding-top: 1rem; /* Kurangi padding */
-        text-align: center; /* Center align untuk perangkat sedang */
+        padding-top: 1rem; 
+        text-align: center; 
     }
 
     nav ul {
-        flex-direction: row; /* Kolom untuk perangkat sedang */
+        flex-direction: row; 
         align-items: center;
-        gap: rem; /* Kurangi jarak antar item */
+        gap: rem; 
     }
 
     header .byag a {
-        font-size: 2.5rem; /* Sesuaikan ukuran teks */
+        font-size: 2.5rem; 
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Sesuaikan ukuran font */
+        font-size: 1.2rem; 
     }
 }
 
 @media (max-width: 1024px) {
     header {
-        flex-direction: column; /* Ubah arah flex menjadi kolom untuk perangkat sedang */
+        flex-direction: column; 
         padding: 1.5rem;
-        padding-top: 0rem; /* Kurangi padding */
-        text-align: center; /* Center align untuk perangkat sedang */
+        padding-top: 0rem; 
+        text-align: center; 
     }
 
     nav ul {
-        flex-direction: column; /* Kolom untuk perangkat sedang */
+        flex-direction: column; 
         align-items: center;
-        gap: 0.75rem; /* Kurangi jarak antar item */
+        gap: 0.75rem; 
     }
 
     header .byag a {
-        font-size: 2.5rem; /* Sesuaikan ukuran teks */
+        font-size: 2.5rem; 
     }
 
     nav ul li a {
-        font-size: 1.2rem; /* Sesuaikan ukuran font */
+        font-size: 1.2rem; 
     }
 }
 
@@ -299,6 +293,10 @@ footer {
 
     nav ul li a {
         font-size: 1rem; 
+    }
+
+    nav ul {
+        gap: 0.5rem; 
     }
 
     header .byag a {
@@ -335,8 +333,8 @@ footer {
     display:inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: moveText 3s linear infinite;
-    -webkit-animation: moveText 3s linear infinite;
+    animation: moveText 5s linear infinite;
+    -webkit-animation: moveText 5s linear infinite;
 }
 
 .marquee-container {
