@@ -57,6 +57,17 @@ main p {
     align-items: center;
 }
 
+.byag a {
+    font-weight: bold;
+    animation: bounceIn 1s;
+    color: #fff;
+    text-decoration: none;
+}
+
+.byag a:hover {
+    text-shadow: 0 0 10px #ff00d0;
+}
+
 .btn {
     display: inline-block;
     padding: 1rem 1.5rem;
