@@ -228,7 +228,7 @@ footer {
 
     main p {
         font-size: 1.25rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem;
     }
 
     .btn {
@@ -258,11 +258,12 @@ footer {
 
     main {
         padding: 1rem;
+        text-align: center;
     }
 
     main p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
     }
 
     .btn {
