@@ -21,13 +21,21 @@
 
 .img img {
     width: 250px;
-    height: 300px;
+    height: 270px;
     display: block;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #000000;
     animation: fadeInUp 2s ease-out;
+}
+
+.img2 img {
+    width: 700px;
+    height: 270px;
+    border: 1px solid #000000;
+    animation: fadeInUp 2s ease-out;
+    -webkit-animation: fadeInUp 2s ease-out;
 }
 
 html, body {
@@ -39,7 +47,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: Arial, sans-serif;
+    min-height: 100vh;
     margin: 0;
     background-color: #c6c6c6;
     color: #000000;
@@ -52,7 +60,7 @@ header {
     justify-content: space-between;
     background-color: #333;
     color: #ff00d0;
-    padding: 1.5rem;
+    padding: 1rem;
     align-items: center;
     animation: slideDown 0.5s ease-out;
     -webkit-animation: slideDown 0.5s ease-out;
@@ -132,7 +140,7 @@ nav ul li a:hover {
 
 main {
     flex: 1;
-    padding: 1rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     max-width: 100%;
@@ -147,6 +155,7 @@ section {
     padding: 1rem;
     width: 100%;
     max-width: 800px;
+    box-sizing: border-box;
     margin: auto;
     animation: fadeInUp 2s ease-out;
     -webkit-animation: fadeInUp 2s ease-out;
@@ -165,11 +174,39 @@ section h2 {
     -webkit-animation: fadeIn 0.5s ease-out;
 }
 
-.project {
+.tentang {
+    text-align: left;
     background: #fff;
     border: 1px solid;
     border-radius: 5px;
-    padding: 1px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 0.5s ease-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: transform 0.3s, box-shadow 0.3s;
+    -moz-transition: transform 0.3s, box-shadow 0.3s;
+    -ms-transition: transform 0.3s, box-shadow 0.3s;
+    -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tentang:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 16px rgb(255, 0, 217);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.project {
+    text-align: center;
+    background: #fff;
+    border: 1px solid;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 0.5s ease-out;
@@ -189,10 +226,6 @@ section h2 {
     -o-transform: scale(1.05);
 }
 
-.project-content {
-    text-align: center;
-}
-
 footer {
     background-color: #333;
     color: #fff;
@@ -206,10 +239,35 @@ footer {
 
 /* biar responsif */
 
+
+@media (max-width:4096px) {
+    header {
+        flex-direction: row; /* Ubah arah flex menjadi kolom untuk perangkat sedang */
+        padding: 1.5rem;
+        padding-top: 1rem; /* Kurangi padding */
+        text-align: center; /* Center align untuk perangkat sedang */
+    }
+
+    nav ul {
+        flex-direction: row; /* Kolom untuk perangkat sedang */
+        align-items: center;
+        gap: rem; /* Kurangi jarak antar item */
+    }
+
+    header .byag a {
+        font-size: 2.5rem; /* Sesuaikan ukuran teks */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Sesuaikan ukuran font */
+    }
+}
+
 @media (max-width: 1024px) {
     header {
         flex-direction: column; /* Ubah arah flex menjadi kolom untuk perangkat sedang */
-        padding: 1rem; /* Kurangi padding */
+        padding: 1.5rem;
+        padding-top: 0rem; /* Kurangi padding */
         text-align: center; /* Center align untuk perangkat sedang */
     }
 
@@ -230,42 +288,55 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        padding: 1rem; /* Kurangi padding lebih jauh */
+        padding: 1.5rem;
+        padding-top: 0rem; 
+    }
+
+    header h1 {
+        margin-top: 0rem; 
+        margin-bottom: 1.5rem; 
     }
 
     nav ul li a {
-        font-size: 1rem; /* Kurangi lebih jauh untuk perangkat kecil */
+        font-size: 1rem; 
     }
 
     header .byag a {
-        font-size: 2rem; /* Ukuran teks lebih kecil untuk perangkat kecil */
+        font-size: 2rem; 
     }
 }
 
 @media (max-width: 480px) {
     header {
-        padding: 1.5rem; /* Padding minimal untuk perangkat sangat kecil */
+        padding: 1.5rem;
+        padding-top: 0rem; 
+    }
+
+    header h1 {
+        margin-top: 0rem; 
+        margin-bottom: 1.5rem; 
     }
 
     .byag a {
-        font-size: 1.5rem; /* Ukuran teks lebih kecil untuk perangkat sangat kecil */
+        font-size: 1.5rem; 
     }
 
     nav ul {
-        gap: 0.5rem; /* Kurangi jarak antar item lebih jauh */
+        gap: 0.5rem; 
     }
 
     nav ul li a {
-        font-size: 0.875rem; /* Ukuran font lebih kecil untuk perangkat sangat kecil */
+        font-size: 0.875rem; 
     }
 }
 
 .marquee {
-    display: inline-block;
+    align-items: left;
+    display:inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: moveText 5s linear infinite;
-    -webkit-animation: moveText 5s linear infinite;
+    animation: moveText 3s linear infinite;
+    -webkit-animation: moveText 3s linear infinite;
 }
 
 .marquee-container {
@@ -276,10 +347,13 @@ footer {
 
 @keyframes moveText {
     0% {
-        transform: translateX(100%);
+        transform: translateX(100%); /* Mulai dari luar sisi kanan container */
+    }
+    200% {
+        transform: translateX(0%); /* Bergerak ke posisi normal dalam container */
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-100%); /* Bergerak hingga keluar dari sisi kiri container */
     }
 }
 
