@@ -20,8 +20,8 @@
 }
 
 .img img {
-    max-width: 310px;
-    height: 330px;
+    width: 250px;
+    height: 300px;
     display: block;
     margin-top: 20px;
     margin-left: auto;
