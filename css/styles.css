@@ -32,6 +32,18 @@
     /* Warna tombol saat dihover */
 }
 
+@media (max-width: 600px) {
+    .audio-controls {
+        max-width: 100%; /* Lebar penuh di perangkat kecil */
+        flex-direction: column; /* Susun tombol vertikal */
+    }
+
+    .audio-controls button {
+        margin: 5px 0; /* Spasi vertikal antara tombol */
+        width: 100%;   /* Tombol menjadi lebar penuh */
+    }
+}
+
 /* Section for the development notice */
 .development-notice {
     text-align: center;
