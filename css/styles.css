@@ -68,7 +68,7 @@
     display: inline-block;
     animation: swing 3s ease-in-out infinite;
     transform-origin: top center;
-    /*Titikayunberadadibagianatastengah*/:;
+    /*Titikayunberadadibagianatastengah*/
     -webkit-animation: swing 3s ease-in-out infinite;
 }
 
