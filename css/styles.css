@@ -1,6 +1,77 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fredericka+the+Great&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* Section for the development notice */
+.development-notice {
+    text-align: center;
+    background-color: #ffe6e6;
+    /*Lightredbackgroundtohighlightthenotice*/padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    /*Spacebetweennoticeandaboutsection*/border-radius: 5px;
+    animation: fadeInDown 1s ease-in-out;
+    -webkit-animation: swing 10s infinite;
+}
+
+.notice-text {
+    color: red;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Adjusting the 'About Me' section */
+.about-me {
+    margin-top: 0rem; /* Adjust top margin if needed */
+}
+
+/* Maintain the original animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes swing {
+    
+    25% {
+        transform: rotate(5deg);
+        -webkit-transform: rotate(5deg);
+        -moz-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
+        -o-transform: rotate(5deg);
+}
+    50% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+    75% {
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
+}
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.swing-container {
+    display: inline-block;
+    animation: swing 3s ease-in-out infinite;
+    transform-origin: top center;
+    /*Titikayunberadadibagianatastengah*/:;
+    -webkit-animation: swing 3s ease-in-out infinite;
+}
+
 * {
     box-sizing: border-box;
 }
