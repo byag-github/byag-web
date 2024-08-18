@@ -20,6 +20,11 @@ const updateTitle = () => audioTitle.textContent = playlist[currentTrack].title;
 const updateTime = () => audioTime.textContent =
     `${Math.floor(audio.currentTime / 60)}:${String(Math.floor(audio.currentTime % 60)).padStart(2, '0')}`;
 
+    window.addEventListener('load', () => {
+        audio.muted = false;
+        audio.play();
+        updateTitle();
+    });
+
 audio.addEventListener('timeupdate', updateTime);
 audio.addEventListener('ended', nextTrack);
-window.addEventListener('load', updateTitle);
