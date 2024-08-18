@@ -52,7 +52,7 @@
 
 @media (max-width: 600px) {
     .audio-controls {
-        margin-top: 3rem;
+        margin-top: 2rem;
         max-width: 35%;
         /* Lebar penuh di perangkat kecil */
         flex-direction: column;
