@@ -30,9 +30,7 @@
     margin: 10px auto;
     padding: 7px;
     max-width: 1500px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1f1f1f;
 }
 
 /* Gaya tombol */
@@ -40,7 +38,7 @@
     margin: 0 5px;
     padding: 5px 10px;
     background-color: #4CAF50;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: #ffffff;
     cursor: pointer;
     border-radius: 5px;
@@ -70,12 +68,9 @@
 }
 
 body {
-
     margin: 0;
-    background-color: #000000;
+    background-color: #1f1f1f;
     color: #ffffff;
-    overflow-x: hidden;
-    animation: backgroundFade 5s ease-in-out infinite;
 }
 
 header {
