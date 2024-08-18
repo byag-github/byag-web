@@ -16,8 +16,6 @@
     <link rel="icon" href="images\logobyag.png" sizes="32x32" type="image/png">
     <link rel="icon" href="images\logobyag.png" sizes="96x96" type="image/png">
     <link rel="icon" href="images\logobyag.png" sizes="192x192" type="image/png">
-    <link rel="icon" href="images\logobyag.png" sizes="32x32">
-    <link rel="icon" href="images\logobyag.png" sizes="16x16">
     <link rel="icon" href="images\logobyag.png" type="image/svg+xml">
     <title>BYAG | Data Analyst & Front-End Dev</title>
 </head>
@@ -47,9 +45,28 @@
         </section>
     </main>
 
+    <!-- Src Audio -->
+    <audio id="myAudio" autoplay>
+        <source src="audio\audiorock.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Tombol Audio -->
+    <div class="audio-controls">
+        <button onclick="audio.play(); updateTitle()">Play</button>
+        <button onclick="audio.pause()">Pause</button>
+        <button onclick="audio.play(); audio.currentTime = 0">Reset</button>
+        <button onclick="nextTrack()">Next</button>
+        <div class="title-container">
+            <span id="audioTime">0:00</span>
+            <span id="audioTitle"></span>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 BYAG. All rights reserved.</p>
     </footer>
+
+    <script src="js\audio.js"></script>
 </body>
 
 </html>

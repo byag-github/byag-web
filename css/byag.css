@@ -7,6 +7,68 @@
     font-style: normal;
 }
 
+/* Kontainer untuk tombol audio */
+.title-container {
+    display: flex;
+    gap: 10px;
+    background: linear-gradient(to right, #00aaff, #ff00d0);
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin: 10px auto;
+    padding: 7px;
+    max-width: 1500px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya tombol */
+.audio-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: rgb(255, 255, 255);
+    border: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.audio-controls button:hover {
+    background-color: #ff00d0;
+}
+
+@media (max-width: 600px) {
+    .audio-controls {
+        margin-top: 7rem;
+        max-width: 35%;
+        /* Lebar penuh di perangkat kecil */
+        flex-direction: column;
+        
+        /* Susun tombol vertikal */
+    }
+
+    .audio-controls button {
+        margin: 7px;
+        margin-bottom: 1rem;
+        /* Spasi vertikal antara tombol */
+        width: 50%;
+        /* Tombol menjadi lebar penuh */
+    }
+}
+
 body {
 
     margin: 0;
@@ -61,7 +123,6 @@ main p {
 }
 
 .byag a {
-    
     font-weight: bold;
     animation: bounceIn 1s;
     color: #fff;

@@ -2,15 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fredericka+the+Great&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Kontainer untuk tombol audio */
+.title-container {
+    display: flex;
+    gap: 10px;
+    background: linear-gradient(to right, #00aaff, #ff00d0);
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
 .audio-controls {
     display: flex;
     justify-content: center;
-    
     align-items: center;
-    
+    margin-top: 100px;
     margin: 10px auto;
-    padding: 10px;
-    max-width: 200px;
+    padding: 7px;
+    max-width: 1500px;
     background-color: #f0f0f0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -22,25 +35,28 @@
     padding: 5px 10px;
     background-color: #4CAF50;
     color: rgb(255, 255, 255);
-    border: #00aaff;
+    border: #ffffff;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .audio-controls button:hover {
     background-color: #ff00d0;
-    /* Warna tombol saat dihover */
 }
 
 @media (max-width: 600px) {
     .audio-controls {
-        max-width: 100%; /* Lebar penuh di perangkat kecil */
-        flex-direction: column; /* Susun tombol vertikal */
+        max-width: 100%;
+        /* Lebar penuh di perangkat kecil */
+        flex-direction: column;
+        /* Susun tombol vertikal */
     }
 
     .audio-controls button {
-        margin: 5px 0; /* Spasi vertikal antara tombol */
-        width: 100%;   /* Tombol menjadi lebar penuh */
+        margin: 7px 0;
+        /* Spasi vertikal antara tombol */
+        width: 100%;
+        /* Tombol menjadi lebar penuh */
     }
 }
 
@@ -456,8 +472,8 @@ footer {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: moveText 5s linear infinite;
-    -webkit-animation: moveText 5s linear infinite;
+    animation: moveText 7s linear infinite;
+    -webkit-animation: moveText 7s linear infinite;
 }
 
 .marquee-container {
