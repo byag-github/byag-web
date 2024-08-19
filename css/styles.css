@@ -229,8 +229,8 @@ header {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    animation: moveText 4s linear infinite;
-    -webkit-animation: moveText 4s linear infinite;
+    animation: moveText 3s linear infinite;
+    -webkit-animation: moveText 3s linear infinite;
 }
 
 .marquee-container {
