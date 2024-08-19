@@ -4,7 +4,7 @@
 /* Kontainer untuk tombol audio */
 .title-container {
     display: flex;
-    gap: 10px;
+    gap: 13px;
     background: linear-gradient(to right, #00aaff, #ff00d0);
     border-radius: 3px;
     margin-left: 10px;
@@ -24,9 +24,13 @@
     margin: 10px auto;
     padding: 7px;
     max-width: 1500px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+    background-color: #c6c6c6;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 /* Gaya tombol */
@@ -62,28 +66,42 @@
 
 /* Section for the development notice */
 .development-notice {
+    line-height: 0.1;
+    width: 100%;
     text-align: center;
     background-color: #ffe6e6;
-    /*Lightredbackgroundtohighlightthenotice*/
-    padding: 1rem;
+    border: 1px solid #000000;
     margin-top: 1rem;
     margin-bottom: 0rem;
-    /*Spacebetweennoticeandaboutsection*/
     border-radius: 5px;
+    animation: fade;
     animation: fadeInDown 1s ease-in-out;
-    -webkit-animation: swing 10s infinite;
+    -webkit-animation: fade;
 }
 
 .notice-text {
-    color: red;
+    color: rgb(255, 0, 0);
     font-style: italic;
     margin: 0;
+    animation: blink 0.5s infinite;
+    -webkit-animation: blink 0.5s infinite;
 }
 
-/* Adjusting the 'About Me' section */
 .about-me {
+    line-height: 1.3;
     margin-top: 0rem;
-    /* Adjust top margin if needed */
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+        /* Teks terlihat */
+    }
+
+    50% {
+        opacity: 0;
+        /* Teks tidak terlihat */
+    }
 }
 
 /* Maintain the original animations */
@@ -100,42 +118,23 @@
 }
 
 @keyframes swing {
-
-    25% {
-        transform: rotate(5deg);
-        -webkit-transform: rotate(5deg);
-        -moz-transform: rotate(5deg);
-        -ms-transform: rotate(5deg);
-        -o-transform: rotate(5deg);
+    0% {
+        transform: rotate(-5deg);
     }
 
     50% {
-        transform: rotate(0deg);
-        -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-    }
-
-    75% {
-        transform: rotate(-5deg);
-        -webkit-transform: rotate(-5deg);
-        -moz-transform: rotate(-5deg);
-        -ms-transform: rotate(-5deg);
-        -o-transform: rotate(-5deg);
+        transform: rotate(5deg);
     }
 
     100% {
-        transform: rotate(0deg);
+        transform: rotate(-5deg);
     }
 }
 
 .swing-container {
-    display: inline-block;
-    animation: swing 3s ease-in-out infinite;
-    transform-origin: top center;
-    /*Titikayunberadadibagianatastengah*/
-    -webkit-animation: swing 3s ease-in-out infinite;
+    animation: swing 5s ease-in-out infinite;
+    transform-origin: left right;
+    -webkit-animation: swing 5s ease-in-out infinite;
 }
 
 * {
@@ -199,38 +198,60 @@ header {
     -webkit-animation: slideDown 1s ease-out;
 }
 
+.whitee {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: linear-gradient(to right, #00aaff, #ff00d0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
 .byag a {
+    display: block;
+    margin: 0;
+    padding: 0;
     background: linear-gradient(to right, #00aaff, #ff00d0);
     -webkit-background-clip: text;
     background-clip: text;
     font-weight: bold;
-    animation: bounceIn 1s;
-    color: #fff;
-    text-decoration: none;
 }
 
 .byag a:hover {
-    text-shadow: 0 0 10px rgb(255, 0, 170);
+    text-shadow: 0 0 10px #ff0000;
+}
+
+.marquee {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveText 4s linear infinite;
+    -webkit-animation: moveText 4s linear infinite;
+}
+
+.marquee-container {
+    line-height: 0.8;
+    border-radius: 3px;
+    border-style: double;
+    border: 1px solid #ff00d0;
+    width: 26%;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 9px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 header h1 {
     margin: 0;
     padding: 0;
     font-size: 3rem;
-    text-align: left;
-    animation: bounceIn 5s;
-    background: linear-gradient(to right, #00aaff, #ff00d0);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: bounceIn 5s;
-}
-
-.whitee {
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5rem;
     text-align: left;
     animation: bounceIn 5s;
     background: linear-gradient(to right, #00aaff, #ff00d0);
@@ -310,29 +331,24 @@ section h2 {
 .tentang {
     text-align: left;
     background: #fff;
-    border: 1px solid;
+    border: 2px solid #ff00d0;
     border-radius: 5px;
     padding: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeInUp 0.5s ease-out;
+    animation: fadeInUp 1s ease-out;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    -webkit-transition: transform 0.3s, box-shadow 0.3s;
-    -moz-transition: transform 0.3s, box-shadow 0.3s;
-    -ms-transition: transform 0.3s, box-shadow 0.3s;
-    -o-transition: transform 0.3s, box-shadow 0.3s;
+    -webkit-animation: fadeInUp 1s ease-out;
 }
 
 .tentang:hover {
-    transform: scale(1.05);
-    box-shadow: 0 3px 16px rgb(255, 0, 217);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    transform: scale(1.02);
+    box-shadow: 0 0px 10px rgb(255, 0, 217);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
 }
 
 .project {
@@ -420,6 +436,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .development-notice {
+        width: 100%;
+    }
+
     header {
         padding: 1.5rem;
         padding-top: 0rem;
@@ -467,22 +487,6 @@ footer {
     }
 }
 
-.marquee {
-    align-items: left;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: moveText 7s linear infinite;
-    -webkit-animation: moveText 7s linear infinite;
-}
-
-.marquee-container {
-    width: 100%;
-    /* Mengatur lebar container agar sesuai dengan lebar section */
-    overflow: hidden;
-    /* Menyembunyikan bagian teks yang keluar dari batas container */
-    position: relative;
-}
 
 @keyframes moveText {
     0% {
