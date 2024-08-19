@@ -57,8 +57,8 @@
     }
 }                                       /* CSS AUDIO END*/
 
-.development-notice {                   /* CSS PENGEMBANGAN START */
-    line-height: 0.1;
+.development-notice {
+    /*CSSPENGEMBANGANSTART*/line-height: 0.1;
     width: 100%;
     text-align: center;
     background-color: #ffe6e6;
@@ -66,6 +66,8 @@
     margin-top: 1rem;
     margin-bottom: 0rem;
     border-radius: 5px;
+    animation: fadeIn 2s;
+    -webkit-animation: fadeIn 2s;
 }
 
 .notice-text {
@@ -165,6 +167,8 @@ body {
     background-color: #c6c6c6;
     color: #000000;
     overflow-x: hidden;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
 }
 
 header {
