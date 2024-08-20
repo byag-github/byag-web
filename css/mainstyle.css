@@ -9,6 +9,7 @@
     margin-left: 10px;
     margin-right: 10px;
     color: #ffffff;
+    width: 100%;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -45,17 +46,7 @@
     background-color: #ff00d0;
 }
 
-@media (max-width: 600px) {
-    .audio-controls {
-        max-width: 100%;
-        flex-direction: column;
-    }
-
-    .audio-controls button {
-        margin: 7px 0;
-        width: 100%;
-    }
-}                                       /* CSS AUDIO END*/
+                                   /* CSS AUDIO END*/
 
 .development-notice {
     /*CSSPENGEMBANGANSTART*/line-height: 0.1;
@@ -401,8 +392,12 @@ footer {
     header {
         flex-direction: column;
         padding: 1.5rem;
-        padding-top: 0rem;
+        padding-top: 1rem;
         text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 0.5rem;
     }
 
     nav ul {
@@ -416,47 +411,65 @@ footer {
     }
 
     nav ul li a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 768px) {
-    .development-notice {
-        width: 100%;
-    }
+        header {
+                padding: 1.5rem;
+                padding-top: 1rem;
+            }
+        
+            header h1 {
+                margin-bottom: 0.5rem;
+            }
+        
+            .byag a {
+                font-size: 1.5rem;
+            }
+        
+            nav ul {
+                gap: 0.5rem;
+            }
+        
+            nav ul li a {
+                font-size: 0.875rem;
+            }
 
-    header {
-        padding: 1.5rem;
-        padding-top: 0rem;
-    }
+            .audio-controls button {
+                width: 70px;
+            }
 
-    header h1 {
-        margin-top: 0rem;
-        margin-bottom: 1.5rem;
-    }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-
-    nav ul {
-        gap: 0.5rem;
-    }
-
-    header .byag a {
-        font-size: 2rem;
-    }
+            .title-container {
+                width: 37%;
+            }
 }
+
+@media (max-width: 600px) {
+        .audio-controls {
+            max-width: 100%;
+            flex-direction: column;
+        }
+    
+        .audio-controls button {
+            margin: 7px 0;
+            width: 70px;
+        }
+    
+        .title-container {
+            width: 100%;
+        }
+    }    
 
 @media (max-width: 480px) {
     header {
         padding: 1.5rem;
-        padding-top: 0rem;
+        padding-top: 1rem;
     }
 
     header h1 {
-        margin-top: 0rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .byag a {
@@ -469,6 +482,14 @@ footer {
 
     nav ul li a {
         font-size: 0.875rem;
+    }
+
+    .audio-controls button {
+        width: 70px;
+    }
+
+    .title-container {
+        width: 65%;
     }
 }
 
