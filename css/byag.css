@@ -56,20 +56,20 @@
 
 @media (max-width: 600px) {
     .audio-controls {
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         max-width: 35%;
-        /* Lebar penuh di perangkat kecil */
         flex-direction: column;
-
-        /* Susun tombol vertikal */
     }
 
     .audio-controls button {
-        margin: 7px;
+        margin: 5px;
         margin-bottom: 1rem;
-        /* Spasi vertikal antara tombol */
         width: 50%;
-        /* Tombol menjadi lebar penuh */
+    }
+
+    .title-container {
+        display: flex;
+        max-width:  100%;
     }
 }
 
