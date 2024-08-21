@@ -202,18 +202,17 @@ header {
 .marquee {
     margin: 0;
     padding: 0;
-    display: inline-block;
+    display: inline-flex;
     white-space: nowrap;
     overflow: hidden;
-    animation: moveText 3s linear infinite;
-    -webkit-animation: moveText 3s linear infinite;
+    animation: moveText 10s linear infinite;
+    -webkit-animation: moveText 10s linear infinite;
 }
 
 .marquee-container {
-    line-height: 0.8;
-    border-style: double;
+    line-height: 1;
     border: 1px solid #ff00d0;
-    width: 26%;
+    width: 100%;
     overflow: hidden;
     padding: 0;
     margin-top: 5px;
@@ -307,7 +306,7 @@ section h2 {
 .tentang {
     text-align: left;
     background: #fff;
-    border: 1px solid #ff00d0;
+    border: 2px solid #ff00d0;
     border-radius: 5px
     display inline-flex;
     margin-top: 0rem;
