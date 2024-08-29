@@ -357,7 +357,6 @@ section h2 {
 .img2 img {
         width: 50%;
         height: auto;
-        border: 1px solid #000000;
         animation: fadeInUp 2s ease-out;
         -webkit-animation: fadeInUp 2s ease-out;
 }
