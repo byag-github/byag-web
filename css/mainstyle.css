@@ -130,7 +130,8 @@
 .montserrat {
         font-family: "Montserrat", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 500;  /*100 - 900 */
+        font-weight: 500;
+        /*100 - 900 */
         font-style: normal;
 }
 
@@ -148,14 +149,15 @@
 
 body {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
         background-color: #c6c6c6;
         color: #000000;
         overflow-x: hidden;
-        animation: fadeIn 1s;
-        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 2s;
+        -webkit-animation: fadeIn 2s;
 }
 
 header {
@@ -198,16 +200,14 @@ header {
 .marquee {
         margin: 0;
         padding: 0;
-        display: inline-flex;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: moveText 10s linear infinite;
-        -webkit-animation: moveText 10s linear infinite;
+        display: flex;
+        animation: moveText 15s linear infinite;
+        -webkit-animation: moveText 15s linear infinite;
 }
 
 .marquee-container {
         line-height: 1;
-        border: 1px solid #ff00d0;
+        border: 2px solid #ff00d0;
         width: 100%;
         overflow: hidden;
         padding: 0;
@@ -267,6 +267,7 @@ main {
         flex: 1;
         padding: 2rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         max-width: 100%;
         box-sizing: border-box;
@@ -274,7 +275,7 @@ main {
 }
 
 section {
-        background-color: #ffffff;
+        background-color: #ffbcaf;
         border-radius: 5px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 100%;
@@ -299,19 +300,17 @@ section h2 {
         -webkit-animation: fadeIn 0.5s ease-out;
 }
 
-.contact {
-        margin-top: 5rem;
-        padding: 1rem;
-        text-align: center;
-}
-
+/* tentang */
 .tentang {
         text-align: left;
         background: #fff;
-        border: 2px solid #ff00d0;
+        border: 1px solid #000;
         border-radius: 5px display inline-flex;
-        margin-top: 0rem;
-        padding: 0.7rem;
+        padding-top: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        transition: transform 0.3s, box-shadow 0.3s;
         animation: fadeInUp 1s ease-out;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
@@ -329,13 +328,28 @@ section h2 {
         -o-transform: scale(1.02);
 }
 
-.project {
-        flex: 1;
+/* tentang end */
+
+/* project */
+.project-container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        background: #fff;
+        flex-wrap: wrap;
+        flex: 1;
+        gap: 30px;
+}
+
+.project {
+        width: 300px;
+        height: 230px;
+        text-align: center;
+        background: #ffd2c9;
         border: 1px solid;
         border-radius: 5px;
-        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s, box-shadow 0.3s;
         animation: fadeInUp 0.5s ease-out;
         -webkit-animation: fadeInUp 0.5s ease-out;
@@ -343,6 +357,14 @@ section h2 {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
+        -webkit-transition: transform 0.3s, box-shadow 0.3s;
+        -moz-transition: transform 0.3s, box-shadow 0.3s;
+        -ms-transition: transform 0.3s, box-shadow 0.3s;
+        -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project h3 {
+        color: #000000;
 }
 
 .project:hover {
@@ -354,9 +376,36 @@ section h2 {
         -o-transform: scale(1.05);
 }
 
+.data-analytic {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.25'%3E%3Cpath stroke='%23ff2929' d='M35.417 18.75v12.5m-8.334-8.333v8.333zm-8.333-8.334V31.25z'/%3E%3Cpath stroke='black' d='M10.417 6.25v37.5M6.25 39.583h37.5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.web-dev {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='none'%3E%3Crect width='40' height='32' x='4' y='8' stroke='%23000' stroke-linejoin='round' stroke-width='2.1' rx='3'/%3E%3Cpath fill='%23ff2929' stroke='%23000' stroke-width='2.1' d='M4 11C4 9.34315 5.34315 8 7 8H41C42.6569 8 44 9.34315 44 11V20H4V11Z'/%3E%3Ccircle r='2' fill='%23fff' transform='matrix(0 -1 -1 0 10 14)'/%3E%3Ccircle r='2' fill='%23fff' transform='matrix(0 -1 -1 0 16 14)'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* project end */
+
+.img1 img {
+        width: 170px;
+        height: 130px;
+        animation: fadeInUp 2s ease-out;
+        -webkit-animation: fadeInUp 2s ease-out;
+}
+
 .img2 img {
-        width: 50%;
-        height: auto;
+        width: 200px;
+        height: 130px;
         animation: fadeInUp 2s ease-out;
         -webkit-animation: fadeInUp 2s ease-out;
 }
@@ -365,12 +414,163 @@ footer {
         background-color: #333;
         color: #fff;
         text-align: center;
-        padding: 0.5rem;
+        padding: 1rem;
         position: relative;
         width: 100%;
         animation: slideUp 1s ease-out;
         -webkit-animation: slideUp 1s ease-out;
 }
+
+/* sosmed */
+.sosmed {
+        margin-top: 2rem;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background: #ffd2c9;
+        border: 1px solid;
+        border-radius: 5px;
+        transition: transform 0.3s, box-shadow 0.3s;
+        animation: fadeInUp 0.5s ease-out;
+        -webkit-transition: transform 0.3s, box-shadow 0.3s;
+        -moz-transition: transform 0.3s, box-shadow 0.3s;
+        -ms-transition: transform 0.3s, box-shadow 0.3s;
+        -o-transition: transform 0.3s, box-shadow 0.3s;
+        -webkit-animation: fadeInUp 0.5s ease-out;
+}
+
+.sosmed h3 {
+        margin-top: 0;
+        margin-bottom: 9px;
+        padding: 0;
+}
+
+.sosmed:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 5px 10px rgb(255, 0, 217);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+
+.cardsosmed {
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px;
+}
+
+.socialContainer {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background-color: rgb(44, 44, 44);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+        background-color: #d62976;
+        transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+        background-color: #00acee;
+        transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+        background-color: #0072b1;
+        transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+        background-color: #128C7E;
+        transition-duration: .3s;
+}
+
+.socialContainer:active {
+        transform: scale(0.9);
+        transition-duration: .3s;
+}
+
+.socialSvg {
+        width: 17px;
+}
+
+.socialSvg path {
+        fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+        animation: slide-in-top 0.3s both;
+}
+
+/* sosmed end */
+
+/* contact */
+.contact {
+        align-items: center;
+        margin-top: 20px;
+        text-align: left;
+        border: 1px solid;
+}
+
+.contact:hover {
+        transform: scale(1.05);
+        box-shadow: 1px 5px 10px rgb(255, 0, 217);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+
+.contact p {
+        display: inline-block;
+        margin: 0px;
+        line-height: 35px;
+        vertical-align: middle;
+        padding-top: 6px;
+}
+
+.spesial-icon {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'%3E%3Cpath stroke='%23cc000a' d='M33.333 6.25v4.167H37.5zm-9.479 24.23a2.08 2.08 0 0 0 2.292 0L37.5 22.916v-12.5L33.333 6.25h-18.75A2.083 2.083 0 0 0 12.5 8.333v14.584z'/%3E%3Cpath stroke='black' d='m26.146 30.48l14.375-9.647a2.083 2.083 0 0 1 3.229 1.73v19.104a2.083 2.083 0 0 1-2.083 2.083H8.333a2.083 2.083 0 0 1-2.083-2.083V22.646a2.084 2.084 0 0 1 3.23-1.813l14.374 9.563a2.08 2.08 0 0 0 2.292.083'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* contact end */
+
+@keyframes slide-in-top {
+        0% {
+                transform: translateY(-50px);
+                opacity: 0;
+        }
+
+        100% {
+                transform: translateY(0);
+                opacity: 1;
+        }
+}
+
+/* sosmed animasi */
 
 /* biar responsif */
 @media (max-width:4096px) {

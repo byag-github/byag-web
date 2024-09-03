@@ -35,34 +35,39 @@
                 </div>
         </header>
 
-        <main>
-                <section class="fade-in">
-                        <h2>Portofolio</h2>
+        <section class="development-notice swing-container">
+                <p class="notice-text">Website under development.</p>
+                <p id="countdown" style="
+          margin-top: 15px;
+          margin-bottom: 0;
+          font-size: 13px;
+          font-style: oblique;
+          text-decoration: underline;
+        ">
+                        goal-set: <span id="time"></span>
+                </p>
+        </section>
 
-                        <div class="project">
-                                <h3>JS Sederhana (Calculator BMI)</h3>
-                                <div class="img2">
-                                        <a href="https://revou-fundamental-course.github.io/5-aug-24-ucupsumampir/" target="_blank">
-                                                <img src="images\JS_Sederhana.jpg"></a>
-                                </div>
-                        </div>
-                        <br>
-                        <div class="project">
-                                <h3>JS Sederhana (Lampu)</h3>
-                                <div class="img2">
-                                        <a href="https://byag-github.github.io/cetrekanlampu/" target="_blank">
-                                                <img src="images\Lampu_Sederhana.png"></a>
-                                </div>
-                        </div>
-                        <br>
-                        <div class="project">
-                                <h3>JS Sederhana (Web-2-3)</h3>
-                                <a href="https://byag-github.github.io/secondweb/" target="_blank">
-                                        <p style="color: red;">Second-Web, Third-Web (ongoing)</p>
+        <div class="project-container">
+                <div class="project">
+                        <div>
+                                <a href="portfolio\projek.html" target="_blank">
+                                        <h3>Web Development</h3>
+                                        <span class="web-dev"></span>
                                 </a>
                         </div>
-                </section>
-        </main>
+                </div>
+
+                <div class="project">
+                        <div>
+                                <a href="https://lookerstudio.google.com/u/0/reporting/061a265b-196e-4bae-a9f8-0ce6321ac13e/page/p_ty4stmkdkd"
+                                        target="_blank">
+                                        <h3>Data Analytics</h3>
+                                        <span class="data-analytic"></span>
+                                </a>
+                        </div>
+                </div>
+        </div>
 
         <!-- Src Audio -->
         <audio id="myAudio" autoplay muted>
@@ -86,6 +91,7 @@
         </footer>
 
         <script src="js\audio.js"></script>
+        <script src="js\time.js"></script>
 </body>
 
 </html>
