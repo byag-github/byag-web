@@ -756,18 +756,18 @@ footer {
         -o-transform: translateX(100%);
 }
     50% {
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
 }
     100% {
-        transform: translateX(-250%);
-        -webkit-transform: translateX(-250%);
-        -moz-transform: translateX(-250%);
-        -ms-transform: translateX(-250%);
-        -o-transform: translateX(-250%);
+        transform: translateX(-150%);
+        -webkit-transform: translateX(-150%);
+        -moz-transform: translateX(-150%);
+        -ms-transform: translateX(-150%);
+        -o-transform: translateX(-150%);
 }
 }
 
