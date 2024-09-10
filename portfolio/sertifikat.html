@@ -4,33 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\mainstyle.css">
+    <link rel="stylesheet" href="..\css\mainstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Fredericka+the+Great&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="apple-touch-icon" href="images\logobyag.png">
-    <link rel="icon" href="images\logobyag.png" type="image/x-icon">
-    <link rel="icon" href="images\logobyag.png" type="image/svg+xml">
-    <link rel="icon" href="images\logobyag.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="images\logobyag.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="images\logobyag.png" sizes="96x96" type="image/png">
-    <link rel="icon" href="images\logobyag.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="..\images\logobyag.png">
+    <link rel="icon" href="..\images\logobyag.png" type="image/x-icon">
+    <link rel="icon" href="..\images\logobyag.png" type="image/svg+xml">
+    <link rel="icon" href="..\images\logobyag.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="..\images\logobyag.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="..\images\logobyag.png" sizes="96x96" type="image/png">
+    <link rel="icon" href="..\images\logobyag.png" sizes="192x192" type="image/png">
     <title>BYAG | Data Analyst & Front-End Dev</title>
 </head>
 
 <body class="montserrat">
     <header>
         <div>
-            <h1 class="byag"><a href="byag.html">BYAG</a></h1>
+            <h1 class="byag"><a href="..\byag.html">BYAG</a></h1>
         </div>
         <div>
             <nav>
                 <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="..\index.html">About</a></li>
+                    <li><a href="..\portfolio.html">Portfolio</a></li>
+                    <li><a href="..\contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,55 +38,51 @@
 
     <main>
         <section class="fade-in">
-            <h2>Portofolio</h2>
+            <h2 style="color: #000; text-decoration: underline; font-style: oblique;">Certificate</h2>
+            <div class="project-container">
+                <div class="project">
+                    <div class="img2">
+                        <a href="https://byag-github.github.io/secondweb/portfolio" target="_blank">
+                            <h3>RevoU Fundamental Course</h3>
+                            <img src="..\images\sertirevou.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
 
-            <div class="project">
-                <h3>JS Sederhana (Calculator BMI)</h3>
-                <div class="img2">
-                    <a href="projek.html">
-                        <img src="images\JS_Sederhana.jpg"></a>
+                    <div class="img2">
+                        <a href="https://byag-github.github.io/secondweb/portfolio" target="_blank">
+                            <h3>another serti (soon upload)</h3>
+                            <img src="..\images\sertimyskillid.png">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="project">
-                <h3>JS Sederhana (Lampu)</h3>
-                <div class="img2">
-                    <a href="https://byag-github.github.io/cetrekanlampu/" target="_blank">
-                        <img src="images\Lampu_Sederhana.png"></a>
+                <div class="project">
+
+                    <div class="img2">
+                        <a href="https://byag-github.github.io/secondweb/portfolio" target="_blank">
+                            <h3>another serti (soon upload)</h3>
+                            <img src="..\images\sertitoefl.png">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="project">
-                <h3>JS Sederhana (Web-2-3)</h3>
-                <a href="https://byag-github.github.io/secondweb/" target="_blank">
-                    <p style="color: red;">Second-Web, Third-Web (ongoing)</p>
-                </a>
+                <div class="project">
+
+                    <div class="img2">
+                        <a href="https://byag-github.github.io/secondweb/portfolio" target="_blank">
+                            <h3>another serti (soon upload)</h3>
+                            <img src="..\images\sertieduwork.png">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
-    <!-- Src Audio -->
-    <audio id="myAudio" autoplay muted>
-        <source src="audio\audiorock.mp3" type="audio/mpeg">
-    </audio>
-
-    <!-- Tombol Audio -->
-    <div class="audio-controls">
-        <button onclick="audio.play(); updateTitle()">Play</button>
-        <button onclick="audio.pause()">Pause</button>
-        <button onclick="audio.play(); audio.currentTime = 0">Reset</button>
-        <button onclick="nextTrack()">Next</button>
-        <div class="title-container">
-            <span id="audioTime">0:00</span>
-            <span id="audioTitle"></span>
-        </div>
-    </div>
 
     <footer>
         <p>&copy; 2024 BYAG. All rights reserved.</p>
     </footer>
 
-    <script src="js\audio.js"></script>
 </body>
 
 </html>

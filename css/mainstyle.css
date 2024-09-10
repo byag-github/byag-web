@@ -445,7 +445,55 @@ footer {
     -webkit-animation: slideUp 1s ease-out;
 }
 
-/* sosmed */
+/* button start */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid rgb(252, 70, 100);
+    cursor: pointer;
+    background-color: #333;
+    text-decoration: none;
+    position:relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 70, 100);
+    transform: translateX(-100%);
+    transition: all .5s;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}
+/* button end */
+
+/* sosmed start*/
 .sosmed {
     margin-top: 2rem;
     display: flex;
@@ -542,10 +590,9 @@ footer {
 .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
 }
-
 /* sosmed end */
 
-/* contact */
+/* contact start*/
 .contact {
     align-items: center;
     margin-top: 20px;
@@ -582,6 +629,7 @@ footer {
 
 /* contact end */
 
+/* sosmed animasi start */
 @keyframes slide-in-top {
     0% {
         transform: translateY(-50px);
@@ -594,7 +642,7 @@ footer {
     }
 }
 
-/* sosmed animasi */
+/* sosmed animasi end*/
 
 /* biar responsif */
 @media (max-width:4096px) {
@@ -754,21 +802,23 @@ footer {
         -moz-transform: translateX(100%);
         -ms-transform: translateX(100%);
         -o-transform: translateX(100%);
-}
+    }
+
     50% {
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
         -moz-transform: translateX(0%);
         -ms-transform: translateX(0%);
         -o-transform: translateX(0%);
-}
+    }
+
     100% {
         transform: translateX(-150%);
         -webkit-transform: translateX(-150%);
         -moz-transform: translateX(-150%);
         -ms-transform: translateX(-150%);
         -o-transform: translateX(-150%);
-}
+    }
 }
 
 @keyframes slideDown {
