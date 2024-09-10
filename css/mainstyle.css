@@ -813,12 +813,12 @@ footer {
     }
 
     100% {
-        transform: translateX(-150%);
-        -webkit-transform: translateX(-150%);
-        -moz-transform: translateX(-150%);
-        -ms-transform: translateX(-150%);
-        -o-transform: translateX(-150%);
-    }
+        transform: translateX(-250%);
+        -webkit-transform: translateX(-250%);
+        -moz-transform: translateX(-250%);
+        -ms-transform: translateX(-250%);
+        -o-transform: translateX(-250%);
+}
 }
 
 @keyframes slideDown {
