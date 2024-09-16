@@ -321,12 +321,12 @@ section h2 {
 }
 
 .tentang:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     box-shadow: 0 0px 10px rgb(255, 0, 217);
-    -webkit-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-    -o-transform: scale(1.02);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 /* tentang end */
@@ -372,12 +372,47 @@ section h2 {
 }
 
 .project:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     box-shadow: 0 3px 16px rgb(255, 0, 217);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
+}
+
+.project-sertifikat {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 230px;
+    text-align: center;
+    background: #ffd2c9;
+    border: 1px solid;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 1s ease-out;
+    -webkit-animation: fadeInUp 1s ease-out;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: transform 0.3s, box-shadow 0.3s;
+    -moz-transition: transform 0.3s, box-shadow 0.3s;
+    -ms-transition: transform 0.3s, box-shadow 0.3s;
+    -o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-sertifikat h3 {
+    color: #000000;
+}
+
+.project-sertifikat:hover {
+    transform: scale(2);
+    box-shadow: 0 3px 16px rgb(255, 0, 217);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
 }
 
 .data-analytic {
@@ -520,12 +555,12 @@ footer {
 }
 
 .sosmed:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     box-shadow: 1px 5px 10px rgb(255, 0, 217);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
 }
 
 .cardsosmed {
@@ -598,15 +633,22 @@ footer {
     margin-top: 20px;
     text-align: left;
     border: 1px solid;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeInUp 2s ease-out;
+    -webkit-animation: fadeInUp 2s ease-out;
+    -webkit-transition: transform 0.3s, box-shadow 0.3s;
+    -moz-transition: transform 0.3s, box-shadow 0.3s;
+    -ms-transition: transform 0.3s, box-shadow 0.3s;
+    -o-transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .contact:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     box-shadow: 1px 5px 10px rgb(255, 0, 217);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
 }
 
 .contact p {
