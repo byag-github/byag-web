@@ -118,9 +118,15 @@
 }
 
 .swing-container {
-    animation: swing 5s ease-in-out infinite;
+    animation: swing 7.5s ease-in-out infinite;
     transform-origin: left right;
-    -webkit-animation: swing 5s ease-in-out infinite;
+    -webkit-animation: swing 7.5s ease-in-out infinite;
+}
+
+.swing-container2 {
+    animation: swing 2.5s ease-in-out infinite;
+    transform-origin: left right;
+    -webkit-animation: swing 2.5s ease-in-out infinite;
 }
 
 * {
