@@ -271,8 +271,8 @@ nav ul li a:hover {
 }
 
 main {
-    display: inline-flex;
     flex: 1;
+    display: inline-flex;
     padding: 2rem;
     flex-direction: column;
     justify-content: center;
@@ -563,10 +563,10 @@ footer {
 /* sosmed start*/
 .sosmed {
     margin-top: 2rem;
-    display: flex;
     width: auto;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background: #ffd2c9;
     border: 1px solid;
