@@ -271,6 +271,7 @@ nav ul li a:hover {
 }
 
 main {
+    display: inline-flex;
     flex: 1;
     padding: 2rem;
     flex-direction: column;
