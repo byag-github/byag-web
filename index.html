@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css\mainstyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/mainstyle.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,32 +46,32 @@
         </p>
     </section>
 
-    <div class="img">
+    <div class="img" data-tilt data-tilt-reverse="true">
         <img src="images\batik2.JPG" />
     </div>
 
     <main>
-        <section class="about-me">
-            <div class="tentang">
-                <h2>Summary</h2>
-                <p>
-                    Assalamu'alaikum, im ucup. Tech enthusiast.<br />
-                    follow me on:
-                    <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
-                    <a href="https://github.com/byag-github" target="_blank">GitHub</a>,
-                    dan
-                    <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.
-                </p>
-                Information about BYAG:
-                <header class="whitee">
-                    <div class="marquee-container">
-                        <span class="byag marquee"><a href="byag.html">BYAG&nbsp;
-                                <span class="byag marquee"><a href="byag.html">- Art
-                                        Name </a></span></a></span>
-                    </div>
-                </header>
-            </div>
-        </section>
+
+        <div class="tentang" data-tilt>
+            <h2>Summary</h2>
+            <p>
+                Assalamu'alaikum, im ucup. Tech enthusiast.<br />
+                follow me on:
+                <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
+                <a href="https://github.com/byag-github" target="_blank">GitHub</a>,
+                dan
+                <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.
+            </p>
+            Information about BYAG:
+            <header class="whitee">
+                <div class="marquee-container">
+                    <span class="byag marquee"><a href="byag.html">BYAG&nbsp;
+                            <span class="byag marquee"><a href="byag.html">- Art
+                                    Name </a></span></a></span>
+                </div>
+            </header>
+        </div>
+
     </main>
 
     <!-- Src Audio -->
@@ -96,6 +97,7 @@
 
     <script src="js\audio.js"></script>
     <script src="js\time.js"></script>
+    <script type="text/javascript" src="js\vanilla_tilt.js"></script>
 </body>
 
 </html>
