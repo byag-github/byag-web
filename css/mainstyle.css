@@ -140,16 +140,14 @@
 .img img {
     border-radius: 5px;
     width: 250px;
-    height: 270px;
+    height: 290px;
     display: block;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #000000;
-    animation: fadeInUp 3s ease-out;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.17);
-    -webkit-animation: fadeInUp 3s ease-out;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -166,6 +164,7 @@ img:hover {
 }
 
 body {
+    font-family: 'montserrat';
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -174,8 +173,6 @@ body {
     background-color: #c6c6c6;
     color: #000000;
     overflow-x: hidden;
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
 }
 
 header {
@@ -185,8 +182,8 @@ header {
     background-color: #333;
     padding: 1rem;
     align-items: center;
-    animation: slideDown 1s ease-out;
-    -webkit-animation: slideDown 1s ease-out;
+    animation: slideDown 1.5s ease-out;
+    -webkit-animation: slideDown 1.5s ease-out;
 }
 
 .whitee {
@@ -346,7 +343,7 @@ section h2 {
 
 .tentang h2 {
     text-align: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .tentang:hover {
@@ -501,6 +498,7 @@ section h2 {
     width: 170px;
     height: 130px;
     animation: fadeInUp 2s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
     -webkit-animation: fadeInUp 2s ease-out;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
@@ -512,6 +510,7 @@ section h2 {
     width: 200px;
     height: 130px;
     animation: fadeInUp 2s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
     -webkit-animation: fadeInUp 2s ease-out;
 }
 
@@ -522,8 +521,8 @@ footer {
     padding: 1rem;
     position: relative;
     width: 100%;
-    animation: slideUp 1s ease-out;
-    -webkit-animation: slideUp 1s ease-out;
+    animation: slideUp 1.5s ease-out;
+    -webkit-animation: slideUp 1.5s ease-out;
 }
 
 /* button start */
