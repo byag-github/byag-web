@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: center;
     margin: 10px auto;
+    margin-bottom: 30px;
     padding: 10px;
     max-width: 1500px;
     background-color: #c6c6c6;
@@ -141,16 +142,27 @@
     width: 250px;
     height: 270px;
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid #000000;
-    animation: fadeInUp 2s ease-out;
-    -webkit-animation: fadeInUp 2s ease-out;
+    animation: fadeInUp 3s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.17);
+    -webkit-animation: fadeInUp 3s ease-out;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0px 10px rgb(255, 0, 217);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
 }
 
 body {
@@ -272,23 +284,23 @@ nav ul li a:hover {
 
 main {
     flex: 1;
-    display: inline-flex;
-    padding: 2rem;
+    display: flex;
+    padding: 2.5rem;
     flex-direction: column;
-    justify-content: center;
     max-width: 100%;
-    box-sizing: border-box;
-    position: relative;
+    align-items: center;
 }
 
 section {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 13px 13px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
     padding: 1rem;
+    padding-bottom: 30px;
     margin: auto;
     animation: fadeInUp 2s ease-out;
     -webkit-animation: fadeInUp 2s ease-out;
@@ -315,10 +327,10 @@ section h2 {
     background: #fff;
     border: 2px solid #000;
     border-radius: 7px;
-    padding-top: -10px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    box-shadow: -15px 15px 0px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 1s ease-out;
     -webkit-border-radius: 7px;
@@ -334,6 +346,7 @@ section h2 {
 
 .tentang h2 {
     text-align: center;
+    margin-top: 5px;
 }
 
 .tentang:hover {
@@ -352,13 +365,14 @@ section h2 {
     width: 100%;
     padding: 0;
     margin: 0;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     flex: 1;
-    gap: 25px;
+    gap: 50px;
 }
 
 .project {
@@ -370,6 +384,7 @@ section h2 {
     background: #ffe8fa;
     border: 1px solid;
     border-radius: 5px;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 1s ease-out;
     -webkit-animation: fadeInUp 1s ease-out;
@@ -423,12 +438,12 @@ section h2 {
 }
 
 .project-sertifikat:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     box-shadow: 0 3px 16px rgb(255, 0, 217);
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -o-transform: scale(2);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
 }
 
 .network {
@@ -518,7 +533,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     flex-direction: column;
 }
 
@@ -562,17 +577,20 @@ footer {
 
 /* sosmed start*/
 .sosmed {
-    margin-top: 2rem;
+    margin-top: 5rem;
     width: auto;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: #ffd2c9;
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 5px;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 2s ease-out;
+    box-shadow: 13px 13px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     -webkit-transition: transform 0.3s, box-shadow 0.3s;
     -moz-transition: transform 0.3s, box-shadow 0.3s;
     -ms-transition: transform 0.3s, box-shadow 0.3s;
@@ -596,8 +614,7 @@ footer {
 }
 
 .cardsosmed {
-    width: fit-content;
-    height: fit-content;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -663,9 +680,17 @@ footer {
 /* contact start*/
 .contact {
     align-items: center;
-    margin-top: 20px;
-    text-align: left;
-    border: 1px solid;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 13px 13px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 0.5rem;
+    padding-bottom: 20px;
+    margin: auto;
+    border: 2px solid;
     transition: transform 0.3s, box-shadow 0.3s;
     animation: fadeInUp 2s ease-out;
     -webkit-animation: fadeInUp 2s ease-out;
@@ -803,6 +828,10 @@ footer {
     footer {
         margin-top: 10px;
     }
+
+    .btn-container {
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -828,6 +857,15 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    body {
+        display: flex;
+    }
+
+    .tentang {
+        max-width: 100%;
+    }
+
     header {
         padding: 1.5rem;
         padding-top: 1rem;
@@ -850,7 +888,7 @@ footer {
     }
 
     .audio-controls button {
-        width: 70px;
+        width: 60px;
     }
 
     .title-container {
@@ -862,12 +900,24 @@ footer {
     footer {
         margin-top: 15px;
     }
+
+
 }
 
-@media (max-width: 320px) {
-    .audio-controls button {
-        width: 60px;
+@media (max-width: 350px) {
+
+    body {
+        display: flex;
+        justify-content: center;
     }
+
+    .cardsosmed {
+        width: 100%;
+        max-width: 200px;
+        align-items: center;
+        gap: 5px;
+    }
+
 }
 
 @keyframes moveText {
