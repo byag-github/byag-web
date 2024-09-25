@@ -5,6 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- main css -->
     <link rel="stylesheet" href="css/mainstyle.css" />
 
@@ -20,7 +23,7 @@
     <title>BYAG | IT Support, Data Analyst, & Front-End Dev</title>
 </head>
 
-<body class="montserrat">
+<body>
     <header>
         <div>
             <h1 class="byag"><a href="byag.html">BYAG</a></h1>
@@ -36,7 +39,7 @@
         </div>
     </header>
 
-    <div class="project-container">
+    <div class="project-container" data-aos="fade-down" data-aos-duration="2000">
         <div class="project" data-tilt>
             <a href="portfolio2.html">
                 <h3>Project</h3>
@@ -56,6 +59,13 @@
         <p>&copy; 2024 BYAG. All rights reserved.</p>
     </footer>
 
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- js tilt -->
     <script type="text/javascript" src="js\vanilla_tilt.js"></script>
 </body>
 

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- main css -->
     <link rel="stylesheet" href="..\css\mainstyle.css">
 
@@ -37,10 +40,10 @@
     </header>
 
     <main>
-        <section class="fade-in">
-            <h2 style="color: #000; text-decoration: underline; font-style: oblique;">Portofolio</h2>
-            <div class="project-container">
-                <div class="project">
+        <section>
+            <h2>Portofolio</h2>
+            <div class="project-container" data-tilt>
+                <div class="project" data-aos="fade-up-left" data-aos-duration="2000">
                     <div class="img2">
                         <a href="https://byag-github.github.io/tictactoe-game/" target="_blank">
                             <h3>React-Vite (TicTacToe)</h3>
@@ -48,7 +51,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-up-right" data-aos-duration="2000">
                     <div class="img2">
                         <a href="https://calculator-bmi-byag.vercel.app/" target="_blank">
                             <h3>JS (Calculator BMI)</h3>
@@ -56,8 +59,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
-
+                <div class="project" data-aos="fade-up-left" data-aos-duration="2000">
                     <div class="img2">
                         <a href="https://cetrekanlampu-byag.vercel.app/" target="_blank">
                             <h3>JS (Lampu)</h3>
@@ -65,14 +67,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="project">
-
+                <div class="project" data-aos="fade-up-right" data-aos-duration="2000">
                     <a href="https://byag-github.github.io/secondweb/" target="_blank">
                         <h3>React-Nod (Web-4-5)</h3>
                         <p style="color: red;">forth-web, fifth-web (ongoing)</p>
                     </a>
                 </div>
-                <div class="project">
+                <div class="project" data-aos="fade-up-left" data-aos-duration="2000">
                     <div class="img2">
                         <a href="https://thirdweb-byag.vercel.app/" target="_blank">
                             <h3>Laundry Anda Web</h3>
@@ -87,6 +88,15 @@
     <footer>
         <p>&copy; 2024 BYAG. All rights reserved.</p>
     </footer>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- js tilt -->
+    <script type="text/javascript" src="..\js\vanilla_tilt.js"></script>
 
 </body>
 
