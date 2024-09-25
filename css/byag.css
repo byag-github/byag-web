@@ -117,6 +117,7 @@ main p {
 }
 
 .button-container {
+    gap: 0.7rem;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -139,10 +140,14 @@ main p {
     font-size: 1rem;
     color: #ffffff;
     background: linear-gradient(to right, #00aaff, #ff00d0);
-    border-radius: 50px;
+    border-radius: 9px;
     text-decoration: none;
     transition: background-color 0.1s, transform 0.1s;
     animation: bounceIn 2s ease-in-out infinite;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -o-border-radius: 9px;
 }
 
 .btn:hover {

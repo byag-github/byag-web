@@ -42,22 +42,18 @@
     <main>
         <div class="tentang" data-tilt>
             <h2>Welcome</h2>
-            <p>
-                Assalamu'alaikum, im ucup. Tech enthusiast.<br />
-                follow me on:
-                <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
-                <a href="https://github.com/byag-github" target="_blank">GitHub</a>,
-                dan
-                <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.
-            </p>
-            Information about BYAG:
-            <header class="whitee">
+
+            <!-- gsap text start -->
+            <p></p>
+            <div class="whitee">
                 <div class="marquee-container">
                     <span class="byag marquee"><a href="byag.html">BYAG&nbsp;
                             <span class="byag marquee"><a href="byag.html">- Art
                                     Name </a></span></a></span>
                 </div>
-            </header>
+            </div>
+            <!-- gsap text end -->
+
         </div>
     </main>
 
@@ -90,12 +86,30 @@
 
     <!-- gsap -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- gsap text -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
+
     <script>
+        gsap.registerPlugin(TextPlugin);
+        gsap.to('.tentang p', {
+            duration: 5.5, delay: 2.5, text: `
+    Assalamu'alaikum, im ucup. Tech enthusiast.<br />
+    follow me on:
+    <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
+    <a href="https://github.com/byag-github" target="_blank">GitHub</a>,
+    dan
+    <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.<br /><br />
+    Information about BYAG:
+  `});
         gsap.to('.img', {
-            duration: 11,
+            duration: 4,
             ease: 'elastic',
             rotateY: 360
         });
+
+        gsap.from('.tentang h2', { duration: 1, x: -150, opacity: 0, delay: 1.7, ease: 'back' });
+        gsap.from('.whitee', { duration: 1, x: -250, opacity: 0, delay: 7.5, ease: 'back' });
     </script>
 
     <!-- js -->

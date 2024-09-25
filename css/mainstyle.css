@@ -220,6 +220,8 @@ header {
 .whitee {
     margin: 0;
     padding: 0;
+    margin-top: -11px;
+    font-size: 35px;
     text-align: left;
     background: linear-gradient(to right, #00aaff, #ff00d0);
     background-clip: text;
@@ -352,7 +354,7 @@ section h2 {
 
 /* tentang */
 .tentang {
-    line-height: 1.7;
+    line-height: 1.55;
     margin-top: 1rem;
     text-align: left;
     background: #fff;
@@ -378,6 +380,7 @@ section h2 {
 .tentang h2 {
     text-align: center;
     margin-top: 10px;
+    margin-bottom: -5px;
 }
 
 .tentang:hover {
@@ -761,16 +764,12 @@ footer {
 /* biar responsif */
 @media (max-width:4096px) {
     header {
-        flex-direction: row;
-        padding: 1.5rem;
-        padding-top: 1rem;
+        padding: 2rem;
         text-align: center;
     }
 
     nav ul {
-        flex-direction: row;
         align-items: center;
-        gap: rem;
     }
 
     header .byag a {
@@ -784,9 +783,7 @@ footer {
 
 @media (max-width: 1024px) {
     header {
-        flex-direction: column;
-        padding: 1.5rem;
-        padding-top: 1rem;
+        padding: 2rem;
         text-align: center;
     }
 
@@ -795,9 +792,7 @@ footer {
     }
 
     nav ul {
-        flex-direction: column;
         align-items: center;
-        gap: 0.75rem;
     }
 
     header .byag a {
@@ -805,14 +800,15 @@ footer {
     }
 
     nav ul li a {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        padding: 1.5rem;
-        padding-top: 1rem;
+        flex-direction: column;
+        padding: 2rem;
+        padding-top: 0.9rem;
     }
 
     header h1 {
@@ -820,15 +816,17 @@ footer {
     }
 
     .byag a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     nav ul {
-        gap: 0.5rem;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 1rem;
     }
 
     nav ul li a {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .audio-controls button {
@@ -881,8 +879,8 @@ footer {
     }
 
     header {
-        padding: 1.5rem;
-        padding-top: 1rem;
+        padding: 2rem;
+        padding-top: 0.7rem;
     }
 
     header h1 {
@@ -890,15 +888,16 @@ footer {
     }
 
     .byag a {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     nav ul {
-        gap: 0.5rem;
+        margin-top: 10px;
+        gap: 1rem;
     }
 
     nav ul li a {
-        font-size: 0.875rem;
+        font-size: 1rem;
     }
 
     .audio-controls button {
@@ -958,7 +957,7 @@ footer {
         -moz-transform: translateX(-75%);
         -ms-transform: translateX(-75%);
         -o-transform: translateX(-75%);
-}
+    }
 
     100% {
         transform: translateX(-150%);
@@ -966,7 +965,7 @@ footer {
         -moz-transform: translateX(-150%);
         -ms-transform: translateX(-150%);
         -o-transform: translateX(-150%);
-}
+    }
 }
 
 @keyframes slideDown {
