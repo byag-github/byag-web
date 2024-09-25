@@ -277,7 +277,7 @@ footer {
 
 @media (max-width: 1028px) {
     .audio-controls {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 }
 
@@ -312,9 +312,6 @@ footer {
         margin: 0 1rem;
     }
 
-    .audio-controls {
-        margin-top: 105px;
-    }
 }
 
 @media (max-width: 480px) {
