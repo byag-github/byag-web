@@ -943,13 +943,30 @@ footer {
         -o-transform: translateX(100%);
     }
 
+
+    50% {
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
+
+    75% {
+        transform: translateX(-75%);
+        -webkit-transform: translateX(-75%);
+        -moz-transform: translateX(-75%);
+        -ms-transform: translateX(-75%);
+        -o-transform: translateX(-75%);
+}
+
     100% {
         transform: translateX(-150%);
         -webkit-transform: translateX(-150%);
         -moz-transform: translateX(-150%);
         -ms-transform: translateX(-150%);
         -o-transform: translateX(-150%);
-    }
+}
 }
 
 @keyframes slideDown {
