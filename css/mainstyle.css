@@ -220,7 +220,7 @@ header {
 .whitee {
     margin: 0;
     padding: 0;
-    margin-top: -11px;
+    margin-top: -13px;
     font-size: 35px;
     text-align: left;
     background: linear-gradient(to right, #00aaff, #ff00d0);
@@ -365,16 +365,16 @@ section h2 {
     padding-bottom: 2rem;
     box-shadow: -15px 15px 0px 0px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeInUp 1s ease-out;
+    animation: slideDown 2.5s ease-out;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     -ms-border-radius: 7px;
     -o-border-radius: 7px;
-    -webkit-animation: fadeInUp 1s ease-out;
     -webkit-transition: transform 0.3s, box-shadow 0.3s;
     -moz-transition: transform 0.3s, box-shadow 0.3s;
     -ms-transition: transform 0.3s, box-shadow 0.3s;
     -o-transition: transform 0.3s, box-shadow 0.3s;
+    -webkit-animation: slideDown 2.5s ease-out;
 }
 
 .tentang h2 {
@@ -808,7 +808,7 @@ footer {
     header {
         flex-direction: column;
         padding: 2rem;
-        padding-top: 0.9rem;
+        padding-top: 1.3rem;
     }
 
     header h1 {
@@ -822,6 +822,7 @@ footer {
     nav ul {
         flex-direction: column;
         margin-top: 10px;
+        margin-bottom: -7px;
         gap: 1rem;
     }
 
@@ -880,7 +881,7 @@ footer {
 
     header {
         padding: 2rem;
-        padding-top: 0.7rem;
+        padding-top: 1.3rem;
     }
 
     header h1 {

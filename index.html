@@ -91,9 +91,18 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
 
     <script>
+        gsap.from('.img', {
+            duration: 9,
+            ease: 'elastic',
+            opacity: 0,
+            rotateY: 360
+        });
+
+        gsap.from('.tentang h2', { duration: 1.5, x: -150, opacity: 0, delay: 2.5, ease: 'back' });
+
         gsap.registerPlugin(TextPlugin);
         gsap.to('.tentang p', {
-            duration: 7.3, delay: 2.7, text: `
+            duration: 7.5, delay: 3.9, text: `
     Assalamu'alaikum, im ucup. Tech enthusiast.<br />
     follow me on:
     <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
@@ -101,15 +110,9 @@
     dan
     <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.<br /><br />
     Information about BYAG:
-  `});
-        gsap.to('.img', {
-            duration: 4,
-            ease: 'elastic',
-            rotateY: 360
-        });
+    `});
 
-        gsap.from('.tentang h2', { duration: 1, x: -150, opacity: 0, delay: 1.7, ease: 'back' });
-        gsap.from('.whitee', { duration: 1, x: -250, opacity: 0, delay: 9, ease: 'back' });
+        gsap.from('.whitee', { duration: 1, x: 200, opacity: 0, delay: 10.7, ease: 'back' });
     </script>
 
     <!-- js -->
