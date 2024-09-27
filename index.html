@@ -63,7 +63,7 @@
     </audio>
 
     <!-- Tombol Audio -->
-    <div class="audio-controls">
+    <div class="audio-controls" data-tilt="">
         <button onclick="audio.play(); updateTitle()">Play</button>
         <button onclick="audio.pause()">Pause</button>
         <button onclick="audio.play(); audio.currentTime = 0">Reset</button>
@@ -92,7 +92,7 @@
 
     <script>
         gsap.from('.img', {
-            duration: 9,
+            duration: 11,
             ease: 'elastic',
             opacity: 0,
             rotateY: 360
@@ -102,7 +102,7 @@
 
         gsap.registerPlugin(TextPlugin);
         gsap.to('.tentang p', {
-            duration: 7.3, delay: 3.9, text: `
+            duration: 7, delay: 3.9, text: `
     Assalamu'alaikum, im ucup. Tech enthusiast.<br />
     follow me on:
     <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
@@ -112,7 +112,7 @@
     Information about BYAG:
     `});
 
-        gsap.from('.whitee', { duration: 1, x: 200, opacity: 0, delay: 10.7, ease: 'back' });
+        gsap.from('.whitee', { duration: 1.5, x: -250, opacity: 0, delay: 9.5, ease: 'back.inOut(4)' });
     </script>
 
     <!-- js -->
