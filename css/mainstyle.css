@@ -88,6 +88,7 @@
 }
 
 .notice-text {
+    margin-top: 10px;
     text-align: center;
     color: rgb(255, 0, 0);
     font-style: italic;
