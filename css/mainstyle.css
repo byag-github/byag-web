@@ -62,25 +62,26 @@
 /* CSS AUDIO END*/
 
 .development-notice {
-    /*CSSPENGEMBANGANSTART*/
-    line-height: 0;
+    display: flex;
+    line-height: 1;
     width: 90%;
+    max-width: 500px;
+    justify-content: center;
     text-align: center;
     background-color: #ffe6e6;
     border: 1px solid #000000;
-    margin-top: 1rem;
-    margin-bottom: 0rem;
     border-radius: 5px;
-    animation: fadeIn 2s;
-    -webkit-animation: fadeIn 2s;
+    margin-bottom: -30px;
+    animation: slideUp 3s ease-out;
+    -webkit-animation: slideUp 3s ease-out;
 }
 
 .notice-text {
+    text-align: center;
     color: rgb(255, 0, 0);
     font-style: italic;
-    margin: 0;
-    animation: blink 0.7s infinite;
-    -webkit-animation: blink 0.7s infinite;
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
 }
 
 /* CSS PENGEMBANGAN END */
@@ -113,14 +114,26 @@
 @keyframes swing {
     0% {
         transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
     }
 
     50% {
-        transform: rotate(5deg);
+        transform: rotate(3deg);
+        -webkit-transform: rotate(3deg);
+        -moz-transform: rotate(3deg);
+        -ms-transform: rotate(3deg);
+        -o-transform: rotate(3deg);
     }
 
     100% {
         transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg);
     }
 }
 
