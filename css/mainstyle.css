@@ -222,12 +222,12 @@
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.10);
     box-shadow: 0 0px 10px rgb(255, 0, 217);
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
+    -webkit-transform: scale(1.10);
+    -moz-transform: scale(1.10);
+    -ms-transform: scale(1.10);
+    -o-transform: scale(1.10);
 }
 
 body {
