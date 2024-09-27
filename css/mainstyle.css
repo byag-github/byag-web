@@ -71,8 +71,8 @@
     border: 1px solid #000000;
     box-shadow: -12px 12px 0px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-top: -20px;
-    margin-bottom: -30px;
+    margin-top: -25px;
+    margin-bottom: -100px;
     animation: slideUp 3s ease-out;
     transition: transform 0.3s, box-shadow 0.3s;
     -webkit-animation: slideUp 3s ease-out;
