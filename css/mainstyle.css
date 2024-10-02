@@ -582,7 +582,6 @@ footer {
 }
 
 /* button start */
-
 .btn-container {
     display: flex;
     justify-content: center;
@@ -594,17 +593,22 @@ footer {
 
 .btn {
     display: inline-block;
-    padding: 0.9rem 1.8rem;
+    padding: 0.8rem 1.5rem;
     font-size: 16px;
     font-weight: 700;
-    color: white;
-    border: 3px solid rgb(252, 70, 100);
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(0, 170, 255, 0.7);
+    border-radius: 50px;
     cursor: pointer;
     background-color: #333;
     text-decoration: none;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
 .btn::before {
@@ -614,20 +618,33 @@ footer {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(252, 70, 100);
+    color: black;
+    background-color: rgba(255, 0, 208, 1);
     transform: translateX(-100%);
-    transition: all .5s;
+    transition: all .3s;
     z-index: -1;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.btn:hover {
+    color: black;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
 }
 
 .btn:hover::before {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
 }
-
 /* button end */
 
 /* sosmed start*/
