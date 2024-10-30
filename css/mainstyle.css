@@ -350,7 +350,7 @@ nav ul li a:hover {
 
 main {
     flex: 1;
-    display: flex;
+    display: inline-flex;
     padding: 2.5rem;
     flex-direction: column;
     max-width: 100%;
