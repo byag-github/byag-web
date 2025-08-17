@@ -39,7 +39,7 @@
         <div class="development-notice" data-tilt data-tilt-reverse="true">
             <p class="notice-text">Website Under Development</p>
             <div style="margin-top: -55px; margin-bottom: -15px; padding: 1rem;">
-                &nbsp; <p style="text-decoration:underline; font-style: oblique; font-size: 13px;">goal-set:&nbsp; <span
+                &nbsp; <p style="text-decoration:underline; font-style: oblique; font-size: 13px;">set-time:&nbsp; <span
                         id="time"></span></p>
             </div>
         </div>
@@ -57,9 +57,8 @@
             <p></p>
             <div class="whitee">
                 <div class="marquee-container">
-                    <span class="byag marquee"><a href="byag.html">BYAG&nbsp;
-                            <span class="byag marquee"><a href="byag.html">- Art
-                                    Name </a></span></a></span>
+                    <span class="byag marquee"><a href="portfolio.html" target="_blank">Portfolio&nbsp;
+                            <span class="byag marquee"><a href="portfolio.html" target="_blank">- Information </a></span></a></span>
                 </div>
             </div>
             <!-- gsap text end -->
@@ -108,21 +107,21 @@
             rotateY: 360
         });
 
-        gsap.from('.tentang h2', { duration: 1.5, x: -150, opacity: 0, delay: 2.5, ease: 'back' });
+        gsap.from('.tentang h2', { duration: 1, x: -150, opacity: 0, delay: 2, ease: 'back' });
 
         gsap.registerPlugin(TextPlugin);
         gsap.to('.tentang p', {
-            duration: 5.5, delay: 3.9, text: `
-    Assalamu'alaikum, im ucup. Tech enthusiast.
-    follow me on:
+            duration: 4, delay: 2.9, text: `
+    Assalamu'alaikum, im ucup. a Tech enthusiast.
+    Social:
     <a href="https://www.linkedin.com/in/yusufahmadghiffari/" target="_blank">LinkedIn</a>,
     <a href="https://github.com/byag-github" target="_blank">GitHub</a>,
     and
     <a href="https://discordapp.com/users/252433483203477504" target="_blank">Discord</a>.<br /><br />
-    Information about BYAG:
+    Sneak Peek my Work:
     `});
 
-        gsap.from('.whitee', { duration: 1.5, x: -250, opacity: 0, delay: 8.5, ease: 'back.inOut(4)' });
+        gsap.from('.whitee', { duration: 2, x: -250, opacity: 0, delay: 5, ease: 'back.inOut(4)' });
     </script>
 
     <!-- js -->

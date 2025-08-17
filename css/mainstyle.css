@@ -175,8 +175,8 @@
 
 .img img {
     border-radius: 5px;
-    width: 250px;
-    height: 290px;
+    width: 200px;
+    height: 240px;
     display: block;
     margin-top: 30px;
     margin-left: auto;
@@ -286,8 +286,8 @@ header {
     padding: 0;
     display: flex;
     white-space: nowrap;
-    animation: moveText 10s linear infinite;
-    -webkit-animation: moveText 10s linear infinite;
+    animation: moveText 7s linear infinite;
+    -webkit-animation: moveText 7s linear infinite;
 }
 
 .marquee-container {
@@ -418,7 +418,7 @@ section h2 {
 .tentang h2 {
     text-align: center;
     margin-top: 12px;
-    margin-bottom: -7px;
+    margin-bottom: -10px;
 }
 
 .tentang:hover {
