@@ -64,7 +64,9 @@
 .development-notice {
     line-height: 1;
     width: 90%;
-    max-width: 500px;
+    height: 90%;
+    max-width: 250px;
+    max-height: 150px;
     justify-content: center;
     text-align: center;
     background-color: #ffe6e6;
@@ -92,8 +94,9 @@
     text-align: center;
     color: rgb(255, 0, 0);
     font-style: italic;
-    animation: blink 0.9s infinite;
-    -webkit-animation: blink 0.9s infinite;
+    font-size: 13px;
+    animation: blink 1s infinite;
+    -webkit-animation: blink 1s infinite;
 }
 
 /* CSS PENGEMBANGAN END */
@@ -175,7 +178,7 @@
 
 .img img {
     border-radius: 5px;
-    width: 200px;
+    width: 220px;
     height: 240px;
     display: block;
     margin-top: 30px;
