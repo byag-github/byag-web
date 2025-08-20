@@ -1,72 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- aos -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <!-- aos -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- main css -->
+		<link rel="stylesheet" href="css/mainstyle.css" />
 
-    <!-- main css -->
-    <link rel="stylesheet" href="css/mainstyle.css" />
+		<!-- fav icon -->
+		<link rel="apple-touch-icon" href="images\logobyag.png" />
+		<link rel="icon" href="images\logobyag.png" type="image/x-icon" />
+		<link rel="icon" href="images\logobyag.png" type="image/svg+xml" />
+		<link rel="icon" href="images\logobyag.png" sizes="16x16" type="image/png" />
+		<link rel="icon" href="images\logobyag.png" sizes="32x32" type="image/png" />
+		<link rel="icon" href="images\logobyag.png" sizes="96x96" type="image/png" />
+		<link rel="icon" href="images\logobyag.png" sizes="192x192" type="image/png" />
 
-    <!-- fav icon -->
-    <link rel="apple-touch-icon" href="images\logobyag.png" />
-    <link rel="icon" href="images\logobyag.png" type="image/x-icon" />
-    <link rel="icon" href="images\logobyag.png" type="image/svg+xml" />
-    <link rel="icon" href="images\logobyag.png" sizes="16x16" type="image/png" />
-    <link rel="icon" href="images\logobyag.png" sizes="32x32" type="image/png" />
-    <link rel="icon" href="images\logobyag.png" sizes="96x96" type="image/png" />
-    <link rel="icon" href="images\logobyag.png" sizes="192x192" type="image/png" />
+		<title>BYAG | IT Support, Data Analyst, & Front-End Dev</title>
+	</head>
 
-    <title>BYAG | IT Support, Data Analyst, & Front-End Dev</title>
-</head>
+	<body>
+		<header>
+			<div>
+				<h1 class="byag"><a href="byag.html">BYAG</a></h1>
+			</div>
+			<div>
+				<nav>
+					<ul>
+						<li><a href="index.html">About</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
-<body>
-    <header>
-        <div>
-            <h1 class="byag"><a href="byag.html">BYAG</a></h1>
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+		<div class="project-container" data-aos="fade-down" data-aos-duration="2000">
+			<div class="project" data-tilt>
+				<a href="#project">
+					<h3>Project</h3>
+					<span class="folder"></span>
+				</a>
+			</div>
 
-    <div class="project-container" data-aos="fade-down" data-aos-duration="2000">
-        <div class="project" data-tilt>
-            <a href="portfolio2.html">
-                <h3>Project</h3>
-                <span class="folder"></span>
-            </a>
-        </div>
-
-        <!-- <div class="project" data-tilt data-tilt-reverse="true">
+			<!-- <div class="project" data-tilt data-tilt-reverse="true">
             <a href="portfolio\sertifikat.html">
                 <h3>Certificate</h3>
                 <span class="serti"></span>
             </a>
         </div> -->
-    </div>
+		</div>
 
-    <footer>
-        <p>&copy; 2024 BYAG. All rights reserved.</p>
-    </footer>
+		<div class="project-container2" id="project">
+			<div class="project" data-aos="fade-up-left" data-aos-duration="2000" data-tilt>
+				<div class="img2">
+					<a href="https://react-vite-showroom.vercel.app/" target="_blank">
+						<h3>React-Vite (Showroom)</h3>
+						<img src="..\images\showroom.png" />
+					</a>
+				</div>
+			</div>
 
-    <!-- aos js -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+			<div class="project" data-aos="fade-up-left" data-aos-duration="2000" data-tilt>
+				<div class="img2">
+					<a href="https://anime-list-byag.vercel.app/" target="_blank">
+						<h3>Next-JS (AnimeList)</h3>
+						<img src="..\images\animelist.png" />
+					</a>
+				</div>
+			</div>
 
-    <!-- js tilt -->
-    <script type="text/javascript" src="js\vanilla_tilt.js"></script>
-</body>
+			<div class="project" data-aos="fade-up-left" data-aos-duration="2000" data-tilt>
+				<div class="img2">
+					<a href="https://byag-github.github.io/tictactoe-game/" target="_blank">
+						<h3>React-Vite (TicTacToe)</h3>
+						<img src="..\images\tictactoe.png" />
+					</a>
+				</div>
+			</div>
 
+			<div class="project" data-aos="fade-up-left" data-aos-duration="2000" data-tilt>
+				<div class="img2">
+					<a href="https://calculator-bmi-byag.vercel.app/" target="_blank">
+						<h3>JS (Calculator BMI)</h3>
+						<img src="..\images\JS_Sederhana.jpg" />
+					</a>
+				</div>
+			</div>
+
+			<div class="project" data-aos="fade-up-left" data-aos-duration="1000" data-aos-offset="50" data-tilt>
+				<div class="img2">
+					<a href="https://thirdweb-byag.vercel.app/" target="_blank">
+						<h3>Laundry Anda Web</h3>
+						<img src="..\images\thirdweb.png" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; 2024 BYAG. All rights reserved.</p>
+		</footer>
+
+		<!-- aos js -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<!-- js tilt -->
+		<script type="text/javascript" src="js/vanilla_tilt.js"></script>
+	</body>
 </html>
