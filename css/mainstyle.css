@@ -663,6 +663,7 @@ footer {
 /* sosmed start*/
 .sosmed {
 	margin-top: 35px;
+	margin-bottom: 35px;
 	width: auto;
 	display: flex;
 	flex-direction: column;
