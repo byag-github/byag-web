@@ -311,7 +311,7 @@ function setupSimple() {
 	setInterval(function () {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		critter.follow(Input.mouse.x, Input.mouse.y);
-	}, 1);
+	}, 0);
 }
 function setupTentacle() {
 	//(x,y,angle,fAccel,fFric,fRes,fThresh,rAccel,rFric,rRes,rThresh)
@@ -329,7 +329,7 @@ function setupTentacle() {
 		ctx.beginPath();
 		ctx.arc(Input.mouse.x, Input.mouse.y, 2, 0, 6.283);
 		ctx.fill();
-	}, 1);
+	}, 0);
 }
 function setupArm() {
 	//(x,y,angle,fAccel,fFric,fRes,fThresh,rAccel,rFric,rRes,rThresh)
@@ -343,7 +343,7 @@ function setupArm() {
 	setInterval(function () {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		critter.follow(canvas.width / 2, canvas.height / 2);
-	}, 1);
+	}, 0);
 	ctx.beginPath();
 	ctx.arc(Input.mouse.x, Input.mouse.y, 2, 0, 6.283);
 	ctx.fill();
@@ -366,7 +366,7 @@ function setupTestSquid(size, legs) {
 	setInterval(function () {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		critter.follow(Input.mouse.x, Input.mouse.y);
-	}, 1);
+	}, 0);
 }
 function setupLizard(size, legs, tail) {
 	var s = size;
@@ -426,7 +426,7 @@ function setupLizard(size, legs, tail) {
 	setInterval(function () {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		critter.follow(Input.mouse.x, Input.mouse.y);
-	}, 0.5);
+	}, 1);
 }
 canvas.style.backgroundColor = "transparant";
 ctx.strokeStyle = "black";
