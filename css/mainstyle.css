@@ -211,9 +211,9 @@
 
 .img2 img {
 	border-radius: 7px;
-	width: 250px;
-	height: 155px;
-	margin-top: -10px;
+	width: 350px;
+	height: 210px;
+	margin-top: -5px;
 	animation: fadeInUp 2s ease-out;
 	transition: transform 0.3s, box-shadow 0.3s;
 	-webkit-animation: fadeInUp 2s ease-out;
@@ -457,6 +457,7 @@ section h2 {
 }
 
 .project-container2 {
+	margin-top: 10vh;
 	margin-bottom: 10vh;
 	min-height: 100vh;
 	width: 100%;
@@ -469,9 +470,12 @@ section h2 {
 }
 
 .project {
+	box-sizing: border-box;
+	display: flex;
+	margin-top: 50px;
 	width: 450px;
 	height: 300px;
-	text-align: center;
+	justify-content: center;
 	background: #ffe8fa;
 	border: 1px solid;
 	border-radius: 5px;
