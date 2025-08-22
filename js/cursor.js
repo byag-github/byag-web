@@ -426,10 +426,10 @@ function setupLizard(size, legs, tail) {
 	setInterval(function () {
 		ctx.clearRect(0, 0, canvas.width, canvas.height);
 		critter.follow(Input.mouse.x, Input.mouse.y);
-	}, 1);
+	}, 0);
 }
 canvas.style.backgroundColor = "transparant";
-ctx.strokeStyle = "black";
+ctx.strokeStyle = "#373737";
 //setupSimple();//Just the very basic string
 //setupTentacle();//Tentacle that reaches for mouse
 //setupLizard(.5,100,128);//Literal centipede
