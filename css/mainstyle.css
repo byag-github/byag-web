@@ -210,17 +210,17 @@
 }
 
 .img2 img {
-	border-radius: 7px;
-	width: 350px;
-	height: 210px;
+	border-radius: 5px;
+	width: 400px;
+	height: 200px;
 	margin-top: -5px;
 	animation: fadeInUp 2s ease-out;
 	transition: transform 0.3s, box-shadow 0.3s;
 	-webkit-animation: fadeInUp 2s ease-out;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	-ms-border-radius: 7px;
-	-o-border-radius: 7px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 	-webkit-transition: transform 0.3s, box-shadow 0.3s;
 	-moz-transition: transform 0.3s, box-shadow 0.3s;
 	-ms-transition: transform 0.3s, box-shadow 0.3s;
@@ -228,12 +228,12 @@
 }
 
 img:hover {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	box-shadow: 0 0px 10px rgb(255, 0, 217);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 }
 
 body,
@@ -473,8 +473,8 @@ section h2 {
 	box-sizing: border-box;
 	display: flex;
 	margin-top: 50px;
-	width: 450px;
-	height: 300px;
+	padding: 20px;
+	padding-top: 0px;
 	justify-content: center;
 	background: #ffe8fa;
 	border: 1px solid;
@@ -492,6 +492,56 @@ section h2 {
 	-ms-transition: transform 0.3s, box-shadow 0.3s;
 	-o-transition: transform 0.3s, box-shadow 0.3s;
 }
+
+.project2 {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	padding: 25px;
+	padding-top: 0px;
+	justify-content: center;
+	background: #ffffff;
+	border: 1px solid;
+	border-radius: 5px;
+	box-shadow: 15px 15px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s, box-shadow 0.3s;
+	animation: fadeInUp 1s ease-out;
+	-webkit-animation: fadeInUp 1s ease-out;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-transition: transform 0.3s, box-shadow 0.3s;
+	-moz-transition: transform 0.3s, box-shadow 0.3s;
+	-ms-transition: transform 0.3s, box-shadow 0.3s;
+	-o-transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.des {
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding: 15px;
+	background-color: gainsboro;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.des p {
+	text-align: left;
+	line-height: 1.2;
+}
+
+.des h3 {
+	font-size: 1rem;
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
+
+
 
 .project h3 {
 	color: #000000;
