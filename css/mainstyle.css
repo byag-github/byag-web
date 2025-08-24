@@ -53,7 +53,7 @@
 }
 
 .audio-controls button:hover {
-	background-color: #ff00d08a;
+	background-color: #ff00d097;
 }
 
 .audio-controls:hover {
@@ -281,7 +281,7 @@ header {
 	margin: 0;
 	padding: 0;
 	font-weight: bold;
-	background: linear-gradient(to right, #00aaff, #ff00d0);
+	background: linear-gradient(to right, #00aaffd2, #ff00d0d1);
 	background-clip: text;
 	-webkit-background-clip: text;
 }
@@ -303,7 +303,7 @@ header {
 
 .marquee-container {
 	line-height: 1;
-	border: 2px solid #ff00d0;
+	border: 2px solid #ff00d0ab;
 	width: 100%;
 	overflow: hidden;
 	padding: 0;
