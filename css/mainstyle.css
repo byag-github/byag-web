@@ -458,7 +458,6 @@ section h2 {
 }
 
 .project-container2 {
-	margin-top: 10vh;
 	margin-bottom: 10vh;
 	min-height: 100vh;
 	width: 100%;
@@ -498,8 +497,8 @@ section h2 {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	margin-top: 50px;
-	padding: 25px;
+	margin-top: 20px;
+	padding: 35px;
 	padding-top: 0px;
 	justify-content: center;
 	background: #ffffff;
@@ -541,8 +540,6 @@ section h2 {
 	margin-top: -5px;
 	margin-bottom: -5px;
 }
-
-
 
 .project h3 {
 	color: #000000;
