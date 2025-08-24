@@ -53,7 +53,7 @@
 }
 
 .audio-controls button:hover {
-	background-color: #ff00d0;
+	background-color: #ff00d08a;
 }
 
 .audio-controls:hover {
@@ -320,12 +320,12 @@ header h1 {
 	padding: 0;
 	font-size: 3rem;
 	text-align: left;
-	animation: bounceIn 9s;
+	animation: bounceIn 10s;
 	background: linear-gradient(to right, #00aaff, #ff00d0);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-animation: bounceIn 9s;
+	-webkit-animation: bounceIn 10s;
 }
 
 nav ul {
