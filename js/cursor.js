@@ -8,7 +8,7 @@ var Input = {
 		y: 0,
 	},
 };
-for (var i = 0; i < 230; i++) {
+for (var i = 0; i < 115; i++) {
 	Input.keys.push(false);
 }
 document.addEventListener("keydown", function (event) {
@@ -305,7 +305,7 @@ function setupSimple() {
 	var critter = new Creature(window.innerWidth / 2, window.innerHeight / 2, 0, 12, 1, 0.5, 16, 0.5, 0.085, 0.5, 0.3);
 	var node = critter;
 	//(parent,size,angle,range,stiffness)
-	for (var i = 0; i < 128; i++) {
+	for (var i = 0; i < 32; i++) {
 		var node = new Segment(node, 8, 0, 3.14159 / 2, 1);
 	}
 	setInterval(function () {
@@ -318,7 +318,7 @@ function setupTentacle() {
 	critter = new Creature(window.innerWidth / 2, window.innerHeight / 2, 0, 12, 1, 0.5, 16, 0.5, 0.085, 0.5, 0.3);
 	var node = critter;
 	//(parent,size,angle,range,stiffness)
-	for (var i = 0; i < 32; i++) {
+	for (var i = 0; i < 8; i++) {
 		var node = new Segment(node, 8, 0, 2, 1);
 	}
 	//(end,length,speed,creature)
@@ -353,7 +353,7 @@ function setupTestSquid(size, legs) {
 	//(x,y,angle,fAccel,fFric,fRes,fThresh,rAccel,rFric,rRes,rThresh)
 	critter = new Creature(window.innerWidth / 2, window.innerHeight / 2, 0, size * 10, size * 3, 0.5, 16, 0.5, 0.085, 0.5, 0.3);
 	var legNum = legs;
-	var jointNum = 32;
+	var jointNum = 16;
 	for (var i = 0; i < legNum; i++) {
 		var node = critter;
 		var ang = (Math.PI / 2) * (i / (legNum - 1) - 0.5);
@@ -434,5 +434,9 @@ ctx.strokeStyle = "#373737";
 //setupTentacle();//Tentacle that reaches for mouse
 //setupLizard(.5,100,128);//Literal centipede
 //setupSquid(2,8);//Spidery thing
-var legNum = Math.floor(1 + Math.random() * 12);
-setupLizard(8 / Math.sqrt(legNum), legNum, Math.floor(4 + Math.random() * legNum * 8));
+// Atur jumlah kaki dan ekor secara manual
+var legNum = 4; // Contoh: 4 kaki
+var tailNum = 8; // Contoh: 8 segmen ekor
+var creatureSize = 4; // Sesuaikan ukuran serangga di sini
+
+setupLizard(creatureSize, legNum, tailNum);
