@@ -552,7 +552,7 @@ section h2 {
 
 .des:hover {
 	transform: translateY(-10px);
-	background-color: rgb(118, 118, 118);
+	background-color: rgba(118, 118, 118, 0.854);
 	color: white;
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
