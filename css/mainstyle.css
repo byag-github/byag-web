@@ -568,6 +568,7 @@ section h2 {
 	margin: 0;
 	padding: 0;
 	margin-top: -5px;
+	margin-bottom: -10px;
 }
 
 /* box js */
@@ -651,7 +652,7 @@ section h2 {
 
 .techstackBR a:link,
 .techstackBR a:visited {
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	text-decoration: none;
 }
 /* box react */
