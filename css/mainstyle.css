@@ -53,11 +53,7 @@
 }
 
 .audio-controls button:hover {
-	background-color: #ff00d097;
-}
-
-.audio-controls:hover {
-	background-color: #bbbbbb;
+	background-color: #ff00d074;
 }
 
 /* CSS AUDIO END*/
