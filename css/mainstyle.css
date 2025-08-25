@@ -161,6 +161,7 @@
 }
 
 .swing-container2 {
+	margin-bottom: -5px;
 	animation: swing 2.5s ease-in-out infinite;
 	transform-origin: left right;
 	-webkit-animation: swing 2.5s ease-in-out infinite;
@@ -238,7 +239,7 @@ img:hover {
 
 body,
 html {
-	font-family: "montserrat";
+	font-family: "Poppins";
 	scroll-behavior: smooth;
 	margin: 0;
 	padding: 0;
@@ -277,6 +278,10 @@ header {
 	-webkit-text-fill-color: transparent;
 }
 
+.byagstyle {
+	font-family: "Monstserrat";
+}
+
 .byag a {
 	display: inline-block;
 	margin: 0;
@@ -289,8 +294,8 @@ header {
 
 .byag a:hover {
 	text-decoration: none;
-	filter: brightness(3);
-	-webkit-filter: brightness(3);
+	filter: brightness(2);
+	-webkit-filter: brightness(2);
 }
 
 .marquee {
@@ -304,7 +309,7 @@ header {
 
 .marquee-container {
 	line-height: 1;
-	border: 2px solid #ff00d0ab;
+	border: 2px solid #0000007c;
 	width: 100%;
 	overflow: hidden;
 	padding: 0;
@@ -408,23 +413,23 @@ section h2 {
 	line-height: 1.55;
 	margin-top: 1.5rem;
 	text-align: left;
-	background: #fff;
+	background: #f4f4f4;
 	border: 2px solid #000;
 	border-radius: 7px;
 	padding-left: 2rem;
 	padding-right: 2rem;
 	padding-bottom: 2rem;
 	box-shadow: -15px 15px 0px 0px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s, box-shadow 0.3s;
+	transition: all 0.3 ease;
 	animation: slideDown 2.5s ease-out;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-ms-border-radius: 7px;
 	-o-border-radius: 7px;
-	-webkit-transition: transform 0.3s, box-shadow 0.3s;
-	-moz-transition: transform 0.3s, box-shadow 0.3s;
-	-ms-transition: transform 0.3s, box-shadow 0.3s;
-	-o-transition: transform 0.3s, box-shadow 0.3s;
+	-webkit-transition: all 0.3 ease;
+	-moz-transition: all 0.3 ease;
+	-ms-transition: all 0.3 ease;
+	-o-transition: all 0.3 ease;
 	-webkit-animation: slideDown 2.5s ease-out;
 }
 
@@ -435,14 +440,8 @@ section h2 {
 }
 
 .tentang:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0px 10px rgb(255, 0, 217);
-	-webkit-transform: scale(1.05);
-	-moz-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	-o-transform: scale(1.05);
+	box-shadow: 10px 10px 0px rgba(255, 0, 217, 0.477);
 }
-
 /* tentang end */
 
 /* project */
@@ -640,7 +639,7 @@ section h2 {
 }
 
 .techstackBR:hover {
-	background-color: rgb(88,196,220);
+	background-color: rgb(88, 196, 220);
 	color: rgb(0, 0, 0);
 	transform: translateY(-4px);
 	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -838,17 +837,18 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: #ffd2c9;
+	background: #ffd6f7;
+	color: #000000c9;
 	border: 2px solid;
 	border-radius: 5px;
-	transition: transform 0.3s, box-shadow 0.3s;
+	transition: all 0.3 ease;
 	animation: fadeInUp 2s ease-out;
 	box-shadow: 13px 13px rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-	-webkit-transition: transform 0.3s, box-shadow 0.3s;
-	-moz-transition: transform 0.3s, box-shadow 0.3s;
-	-ms-transition: transform 0.3s, box-shadow 0.3s;
-	-o-transition: transform 0.3s, box-shadow 0.3s;
+	-webkit-transition: all 0.3 ease;
+	-moz-transition: all 0.3 ease;
+	-ms-transition: all 0.3 ease;
+	-o-transition: all 0.3 ease;
 	-webkit-animation: fadeInUp 2s ease-out;
 }
 
@@ -859,12 +859,9 @@ footer {
 }
 
 .sosmed:hover {
-	transform: scale(1.1);
-	box-shadow: 1px 5px 10px rgb(255, 0, 217);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	background-color: #ff00d06d;
+	color: white;
+	box-shadow: 7px 7px 0px #ff00d06d;
 }
 
 .cardsosmed {
@@ -873,7 +870,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	gap: 20px;
+	gap: 15px;
 }
 
 .socialContainer {
@@ -945,22 +942,17 @@ footer {
 	padding-bottom: 20px;
 	margin: auto;
 	border: 2px solid;
-	transition: transform 0.3s, box-shadow 0.3s;
+	transition: all 0.3s ease;
 	animation: fadeInUp 2s ease-out;
 	-webkit-animation: fadeInUp 2s ease-out;
-	-webkit-transition: transform 0.3s, box-shadow 0.3s;
-	-moz-transition: transform 0.3s, box-shadow 0.3s;
-	-ms-transition: transform 0.3s, box-shadow 0.3s;
-	-o-transition: transform 0.3s, box-shadow 0.3s;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 }
 
 .contact:hover {
-	transform: scale(1.1);
-	box-shadow: 1px 5px 10px rgb(255, 0, 217);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	box-shadow: 7px 7px 0px #ff00d06d;
 }
 
 .contact p {
