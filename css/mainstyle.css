@@ -431,7 +431,7 @@ section h2 {
 .tentang h2 {
 	text-align: center;
 	margin-top: 12px;
-	margin-bottom: -10px;
+	margin-bottom: -5px;
 }
 
 .tentang:hover {
@@ -534,26 +534,112 @@ section h2 {
 }
 
 .des p {
-	font-family: "Montserrat";
+	font-family: "Poppins";
 	text-align: left;
 	line-height: 1.3;
+	font-size: 15px;
 }
 
 .des h3 {
 	text-align: left;
 	font-size: 15px;
 	font-weight: 500;
-	flex-direction: row;
-	font-family: "Poppins";
 }
 
 .techstack {
 	box-sizing: border-box;
 	display: flex;
+	gap: 2px;
 	margin: 0;
 	padding: 0;
-	margin-top: -10px;
+	margin-top: -5px;
 }
+
+/* box js */
+.techstackBJ {
+	box-sizing: border-box;
+	display: flex;
+	height: 30px;
+	padding: 0px 7px 0px 7px;
+	border: 1px solid #000;
+	cursor: pointer;
+	background-color: rgba(232, 211, 77, 0.256);
+	color: rgb(0, 107, 139);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.techstackBJ h3 {
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.techstackBJ:hover {
+	background-color: rgb(232, 211, 77);
+	color: rgb(0, 0, 0);
+	transform: translateY(-4px);
+	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-ms-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+}
+
+.techstackBJ a:link,
+.techstackBJ a:visited {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+/* box js */
+
+/* box react */
+.techstackBR {
+	box-sizing: border-box;
+	display: flex;
+	height: 30px;
+	padding: 0px 7px 0px 7px;
+	border: 1px solid #000;
+	cursor: pointer;
+	background-color: rgba(88, 196, 220, 0.333);
+	color: rgb(255, 255, 255);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.techstackBR h3 {
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.techstackBR:hover {
+	background-color: rgb(88,196,220);
+	color: rgb(0, 0, 0);
+	transform: translateY(-4px);
+	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-ms-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+}
+
+.techstackBR a:link,
+.techstackBR a:visited {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+/* box react */
 
 .project h3 {
 	color: #000000;
@@ -983,6 +1069,9 @@ footer {
 }
 
 @media (max-width: 600px) {
+	.tentang h2 {
+		font-size: 20px;
+	}
 	.audio-controls {
 		max-width: 100%;
 		flex-direction: column;
