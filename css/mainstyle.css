@@ -431,8 +431,34 @@ section h2 {
 	margin-bottom: -5px;
 }
 
+.tentang a {
+	display: inline-block;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.tentang p a:link,
+.tentang p a:visited {
+	color: #0051ff;
+	text-decoration: none;
+}
+
+.tentang p a:hover {
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.703);
+	transform: translateY(-4px);
+	box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translateY(-4px);
+	-moz-transform: translateY(-4px);
+	-ms-transform: translateY(-4px);
+	-o-transform: translateY(-4px);
+}
+
 .tentang:hover {
-	box-shadow: 10px 10px 0px rgba(255, 0, 217, 0.477);
+	box-shadow: 10px 10px 0px rgba(255, 0, 217, 0.34);
 }
 /* tentang end */
 
