@@ -581,6 +581,7 @@ a:link {
 }
 
 .des {
+	display: inline-block;
 	box-sizing: border-box;
 	border: 1px solid #0000004d;
 	margin-top: 15px;
@@ -602,7 +603,7 @@ a:link {
 .des p {
 	font-family: "Poppins";
 	text-align: left;
-	line-height: 1.3;
+	line-height: 1.5;
 	font-size: 15px;
 }
 
@@ -801,6 +802,48 @@ a:link {
 	text-decoration: none;
 }
 /* box tailwind */
+
+/* box nextjs */
+.techstackBN {
+	box-sizing: border-box;
+	display: flex;
+	height: 30px;
+	padding: 0px 7px 0px 7px;
+	border: 1px solid #000;
+	cursor: pointer;
+	background-image: linear-gradient(to right, #040b0c3e, #dee9ed3b, #5d9fa64e, #1e708777);
+	color: rgb(255, 255, 255);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.techstackBN h3 {
+	display: inline-flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.techstackBN:hover {
+	background-image: linear-gradient(to right, #040b0c, #dee9ed, #5d9fa6, #1e7087);
+	transform: translateY(-5px);
+	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+}
+
+.techstackBN a:link,
+.techstackBN a:visited {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+/* box nextjs */
 
 .project-sertifikat {
 	margin: 0;
