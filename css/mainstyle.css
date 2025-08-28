@@ -354,8 +354,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: #ff6347;
-	text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+	text-shadow: 2px 3px 0px rgb(255, 0, 0);
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+	color: #ffffff;
 }
 
 main {
@@ -462,9 +466,10 @@ section h2 {
 }
 /* tentang end */
 
-/* project */
+/* project 1*/
 .project-container {
-	margin-top: -15vh;
+	margin-top: -20vh;
+	margin-bottom: 5vh;
 	height: 100vh;
 	width: 100%;
 	display: flex;
@@ -476,12 +481,13 @@ section h2 {
 }
 
 .project {
-	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 10px;
 	display: flex;
-	padding: 0px 50px 0px 50px;
-	justify-content: center;
+	flex-direction: column;
 	background: #ffe8fa;
-	border: 1px solid;
+	border: 2px solid;
 	border-radius: 5px;
 	box-shadow: 15px 15px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s, box-shadow 0.3s;
@@ -498,17 +504,40 @@ section h2 {
 }
 
 .project h3 {
+	margin-left: -11px;
+	justify-content: center;
+	align-items: center;
 	color: #000000;
-	margin-bottom: 5px;
+	padding: 0;
+	margin-top: 10px;
+	margin-bottom: -2px;
 }
 
 .project:hover {
-	transform: scale(1.1);
-	box-shadow: 8px 8px 0px rgba(255, 0, 217, 0.365);
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	color: white;
+	background-color: #ff00d06d;
+	box-shadow: 7px 7px 0px #ff00d06d;
+}
+
+.project:hover h3 {
+	color: white;
+	text-emphasis: none;
+	text-decoration: none;
+}
+
+a:visited,
+a:link {
+	color: #000;
+	text-decoration: none;
+}
+/* project 1 end */
+
+.icon-hr {
+	border: none 1px;
+	height: 10px;
+	background: linear-gradient(to right, #00aaff21, #ff00d01b);
+	position: relative;
+	margin: 0;
 }
 
 .project-container2 {
@@ -527,7 +556,7 @@ section h2 {
 	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
-	margin-top: 20px;
+	margin-top: 100px;
 	padding: 0px 30px 30px 30px;
 	justify-content: center;
 	background: #ffffff;
@@ -632,12 +661,12 @@ section h2 {
 .techstackBJ:hover {
 	background-color: rgb(232, 211, 77);
 	color: rgb(0, 0, 0);
-	transform: translateY(-4px);
+	transform: translateY(-5px);
 	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-	-webkit-transform: translateY(-4px);
-	-moz-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	-o-transform: translateY(-4px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
 }
 
 .techstackBJ a:link,
@@ -674,13 +703,12 @@ section h2 {
 
 .techstackBR:hover {
 	background-color: rgb(88, 196, 220);
-	color: rgb(0, 0, 0);
-	transform: translateY(-4px);
+	transform: translateY(-5px);
 	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-	-webkit-transform: translateY(-4px);
-	-moz-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	-o-transform: translateY(-4px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
 }
 
 .techstackBR a:link,
@@ -717,13 +745,12 @@ section h2 {
 
 .techstackBV:hover {
 	background-image: linear-gradient(to right, #5fa9fd, #7f82ff, #fdc722, #b53dee);
-	color: rgb(0, 0, 0);
-	transform: translateY(-4px);
+	transform: translateY(-5px);
 	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-	-webkit-transform: translateY(-4px);
-	-moz-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	-o-transform: translateY(-4px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
 }
 
 .techstackBV a:link,
@@ -760,13 +787,12 @@ section h2 {
 
 .techstackBT:hover {
 	background-image: linear-gradient(to right, #e5f5fd, #8ad7fa, #3abef8);
-	color: rgb(0, 0, 0);
-	transform: translateY(-4px);
+	transform: translateY(-5px);
 	box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.15);
-	-webkit-transform: translateY(-4px);
-	-moz-transform: translateY(-4px);
-	-ms-transform: translateY(-4px);
-	-o-transform: translateY(-4px);
+	-webkit-transform: translateY(-5px);
+	-moz-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
 }
 
 .techstackBT a:link,
@@ -841,7 +867,7 @@ section h2 {
 }
 
 .folder {
-	display: inline-block;
+	display: flex;
 	width: 200px;
 	height: 200px;
 	background-repeat: no-repeat;
@@ -964,7 +990,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background: #ffd6f7;
+	background: #ffe8fa;
 	color: #000000c9;
 	border: 2px solid;
 	border-radius: 5px;
