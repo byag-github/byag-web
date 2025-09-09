@@ -50,7 +50,7 @@
 }
 
 .audio-controls button:hover {
-	background-color: #ff43dda3;
+	background-color: #ff45dd8f;
 }
 
 @media (max-width: 600px) {
@@ -296,6 +296,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+	.audio-controls {
+		margin-top: -15px;
+	}
 	header {
 		padding: 1rem;
 	}
@@ -328,6 +331,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+	.audio-controls {
+		margin-top: 0px;
+	}
 	header {
 		flex-direction: column;
 		text-align: center;
