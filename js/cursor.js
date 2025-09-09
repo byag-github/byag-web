@@ -429,7 +429,7 @@ function setupLizard(size, legs, tail) {
 	}, 0);
 }
 canvas.style.backgroundColor = "transparant";
-ctx.strokeStyle = "#37373749";
+ctx.strokeStyle = "#ff00001b";
 //setupSimple();//Just the very basic string
 //setupTentacle();//Tentacle that reaches for mouse
 //setupLizard(.5,100,128);//Literal centipede
